@@ -1,0 +1,470 @@
+@charset "UTF-8";
+#lunbo {
+  width: 17.7rem;
+  height: 6.409rem;
+  position: relative;
+  overflow: hidden; }
+  #lunbo #pre {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: 0.466rem;
+    right: "0"; }
+  #lunbo #next {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: "0";
+    right: 0.466rem; }
+  #lunbo .lunbo-bg {
+    height: 6.409rem;
+    position: absolute;
+    left: -17.7rem; }
+    #lunbo .lunbo-bg li {
+      width: 17.7rem;
+      height: 6.409rem;
+      float: left; }
+      #lunbo .lunbo-bg li img {
+        width: 100%;
+        height: 100%; }
+  #lunbo .lunbo-btn {
+    width: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0.245rem;
+    margin-left: -0.583rem; }
+    #lunbo .lunbo-btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      border-radius: 50%;
+      background: #888c90;
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer; }
+    #lunbo .lunbo-btn li.active {
+      background: #71c9eb; }
+
+.figurePhoto {
+  width: 17.7rem; }
+  .figurePhoto span {
+    display: block;
+    width: 17.7rem;
+    height: 2.33rem;
+    background: #fff; }
+  .figurePhoto .title {
+    width: 10.114rem;
+    margin: 3.496rem 0 0 3.869rem;
+    overflow: hidden; }
+    .figurePhoto .title h3 {
+      width: 10.114rem;
+      text-align: center;
+      font-size: 0.408rem;
+      font-weight: 800;
+      font-family: "微软雅黑体";
+      margin-bottom: 0.385rem; }
+      .figurePhoto .title h3 b {
+        width: 133px;
+        font-size: 0.408rem;
+        font-weight: 400; }
+    .figurePhoto .title p {
+      width: 10.114rem;
+      font-size: 0.204rem;
+      text-align: center;
+      font-family: "微软雅黑体";
+      font-weight: 400;
+      margin-bottom: 0.524rem; }
+  .figurePhoto #figure {
+    width: 17.7rem;
+    height: 6.118rem;
+    position: relative; }
+    .figurePhoto #figure .figure_box {
+      width: 14.158rem;
+      height: 5.442rem;
+      margin: 0 1.771rem 0.466rem 1.771rem;
+      overflow: hidden;
+      position: relative; }
+      .figurePhoto #figure .figure_box .figure_png {
+        height: 5.442rem;
+        position: absolute;
+        display: flex;
+        left: -14.158rem;
+        cursor: pointer; }
+        .figurePhoto #figure .figure_box .figure_png li {
+          width: 14.158rem;
+          height: 5.442rem; }
+          .figurePhoto #figure .figure_box .figure_png li img {
+            width: 100%;
+            height: 100%; }
+    .figurePhoto #figure .figure_btn {
+      display: flex;
+      position: absolute;
+      bottom: 0.338rem;
+      left: 50%;
+      margin-left: -0.35rem; }
+      .figurePhoto #figure .figure_btn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        margin: 0 0.058rem;
+        border-radius: 50%;
+        background: #888c90;
+        cursor: pointer; }
+      .figurePhoto #figure .figure_btn li.active {
+        background: #70cdf0; }
+    .figurePhoto #figure #page_pre {
+      width: 0.419rem;
+      height: 0.419rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.21rem;
+      text-decoration: none;
+      text-align: center;
+      line-height: 0.419rem;
+      color: #131313;
+      font-size: 0.408rem;
+      z-index: 100;
+      left: 0.408rem;
+      right: "0"; }
+    .figurePhoto #figure #page_next {
+      width: 0.419rem;
+      height: 0.419rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.21rem;
+      text-decoration: none;
+      text-align: center;
+      line-height: 0.419rem;
+      color: #131313;
+      font-size: 0.408rem;
+      z-index: 100;
+      left: "0";
+      right: 0.408rem; }
+  .figurePhoto .news {
+    width: 14.228rem;
+    margin: 0.466rem 1.748rem 1.177rem 1.748rem;
+    display: flex; }
+    .figurePhoto .news .first {
+      width: 3.997rem;
+      height: 5.884rem;
+      margin-right: 0.035rem; }
+      .figurePhoto .news .first h5 {
+        width: 2.191rem;
+        font-size: 0.326rem;
+        letter-spacing: 0.02rem;
+        color: #3c3c3c;
+        padding-left: 0.023rem; }
+      .figurePhoto .news .first h4 {
+        width: 1.573rem;
+        font-size: 0.373rem;
+        color: #3c3c3c;
+        font-weight: 800; }
+      .figurePhoto .news .first div {
+        width: 3.997rem;
+        height: 4.894rem;
+        margin-top: 0.233rem; }
+        .figurePhoto .news .first div img {
+          width: 100%;
+          height: 100%; }
+    .figurePhoto .news .second {
+      width: 6.164rem;
+      height: 5.884rem;
+      margin-right: 0.047rem; }
+      .figurePhoto .news .second .top {
+        width: 6.164rem;
+        height: 3.822rem;
+        margin-bottom: 0.035rem; }
+        .figurePhoto .news .second .top img {
+          width: 100%;
+          height: 100%; }
+      .figurePhoto .news .second .bottom {
+        width: 6.164rem;
+        height: 2.028rem; }
+        .figurePhoto .news .second .bottom img {
+          width: 100%;
+          height: 100%; }
+    .figurePhoto .news .third {
+      width: 3.985rem;
+      height: 5.884rem; }
+      .figurePhoto .news .third img {
+        width: 100%;
+        height: 100%; }
+
+.title {
+  width: 17.7rem;
+  position: relative; }
+  .title h6 {
+    width: 4.719rem;
+    font-size: 0.385rem;
+    font-family: "微软雅黑体";
+    position: absolute;
+    text-align: center;
+    color: #3c3c3c;
+    left: 50%;
+    margin-left: -2.354rem;
+    top: 0; }
+    .title h6 span {
+      font-weight: 700; }
+
+.about {
+  height: 1.235rem; }
+
+.mask {
+  width: 17.7rem;
+  background: url(../../../dist/mask.png);
+  background-size: 100%;
+  position: static;
+  z-index: 100000; }
+  .mask .banner {
+    width: 17.7rem;
+    height: 6.036rem;
+    cursor: pointer; }
+    .mask .banner img {
+      width: 100%; }
+  .mask .thumb {
+    background: #000; }
+    .mask .thumb .thumbnail {
+      width: 13.983rem;
+      margin: 0 1.864rem;
+      display: flex;
+      border: none;
+      padding: none; }
+      .mask .thumb .thumbnail li {
+        width: 2.7966rem;
+        height: 1.515rem;
+        cursor: pointer; }
+        .mask .thumb .thumbnail li img {
+          width: 100%;
+          height: 100%;
+          opacity: 0.9; }
+    .mask .thumb .viveport-bg {
+      width: 17.7rem;
+      height: 1.492rem;
+      position: relative; }
+      .mask .thumb .viveport-bg img {
+        width: 100%;
+        height: 100%; }
+      .mask .thumb .viveport-bg a {
+        display: block;
+        position: absolute;
+        width: 1.829rem;
+        height: 0.466rem;
+        text-align: center;
+        line-height: 0.466rem;
+        color: #fff;
+        font-size: 0.186rem;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.9145rem;
+        text-decoration: none;
+        background: #00b5e2;
+        border-radius: 0.233rem; }
+      .mask .thumb .viveport-bg a:hover {
+        color: #000; }
+
+.video-two {
+  width: 17.7rem;
+  height: 7.551rem;
+  position: relative; }
+  .video-two video {
+    width: 100%;
+    height: 7.551rem;
+    position: relative; }
+  .video-two a {
+    display: block;
+    position: absolute;
+    width: 1.725rem;
+    height: 0.513rem;
+    text-align: center;
+    line-height: 0.513rem;
+    color: #fff;
+    font-size: 0.186rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.8625rem;
+    text-decoration: none;
+    background: #00b5e2;
+    border-radius: 0.233rem;
+    z-index: 1000;
+    margin-top: 1.282rem; }
+    .video-two a .icon-play {
+      display: line-block;
+      width: 0.093rem;
+      height: 0.151rem;
+      background: url(../../../dist/play.png) no-repeat -11px -2px;
+      position: absolute;
+      left: 0.28rem;
+      top: 0.198rem; }
+  .video-two a:hover {
+    color: #000; }
+
+.map {
+  width: 17.7rem;
+  background: url(../../../dist/map.jpg) no-repeat;
+  background-size: 100%; }
+  .map h3 {
+    width: 1.585rem;
+    color: #e9eaeb;
+    margin: 0.909rem 8.052rem 0.373rem 8.052rem;
+    font-size: 0.396rem; }
+  .map p {
+    width: 856px;
+    margin: 0 3.869rem 0.769rem 3.869rem;
+    font-size: 0.221rem;
+    text-align: center;
+    color: #e9eaeb; }
+  .map .left {
+    width: 1.678rem;
+    height: 0.501rem;
+    background: #00b5e2;
+    margin-left: 7.05rem;
+    margin-right: "0";
+    margin-bottom: 0.99rem;
+    border-radius: 0.233rem;
+    float: left;
+    text-align: center;
+    line-height: 0.501rem;
+    font-size: 0.186rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.128rem; }
+  .map .right {
+    width: 1.678rem;
+    height: 0.501rem;
+    background: #00b5e2;
+    margin-left: "0";
+    margin-right: 7.038rem;
+    margin-bottom: 0.99rem;
+    border-radius: 0.233rem;
+    float: left;
+    text-align: center;
+    line-height: 0.501rem;
+    font-size: 0.186rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.128rem; }
+  .map a:hover {
+    background: #00cfe2;
+    color: #000; }
+
+.register {
+  width: 17.7rem;
+  background: #00b5e2;
+  overflow: hidden; }
+  .register .con {
+    position: relative;
+    width: 8.331rem;
+    height: 1.049rem;
+    margin: 1.13rem 1.037rem 1.55rem 2.82rem; }
+    .register .con .news {
+      width: 3.344rem;
+      color: #fff;
+      font-size: 0.35rem;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .register .con input {
+      width: 3.484rem;
+      height: 0.454rem;
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 4.847rem;
+      font-size: 0.186rem; }
+    .register .con input::-webkit-input-placeholder {
+      color: #89ddf2; }
+    .register .con #mail {
+      width: 3.484rem;
+      height: 0.303rem;
+      position: absolute;
+      top: 0.629rem;
+      left: 4.847rem; }
+      .register .con #mail .dropdown-toggle {
+        width: 0.186rem;
+        height: 0.28rem;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        background-color: #eee;
+        border: none;
+        cursor: pointer; }
+      .register .con #mail .btn-defalut {
+        width: 3.263rem;
+        height: 0.28rem;
+        padding: 0;
+        text-align: left;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 0.151rem; }
+      .register .con #mail .dropdown-menu {
+        width: 3.263rem; }
+  .register .register-btn {
+    display: block;
+    width: 2.028rem;
+    height: 0.443rem;
+    border-radius: 0.233rem;
+    background: #fff;
+    text-align: center;
+    line-height: 0.443rem;
+    border: 1px solid #3ad5fb;
+    margin-left: 1.561rem;
+    margin-top: 1.748rem;
+    color: #00b5e2;
+    font-size: 0.175rem;
+    text-decoration: none; }
+
+.partner {
+  width: 17.7rem;
+  overflow: hidden; }
+  .partner .partner-content {
+    width: 12.072rem;
+    height: 3.461rem;
+    margin: 1.34rem auto 1.305rem; }
+    .partner .partner-content h4 {
+      width: 5.407rem;
+      margin: 0 auto;
+      font-size: 0.361rem;
+      font-family: "微软雅黑体"; }
+      .partner .partner-content h4 span {
+        font-weight: 900; }
+    .partner .partner-content p {
+      width: 12.072rem;
+      margin: 0.408rem 0 1.224rem;
+      height: 0.559rem;
+      line-height: 0.559rem;
+      text-align: center;
+      font-size: 0.21rem; }
+    .partner .partner-content ul {
+      width: 12.072rem;
+      display: flex;
+      justify-content: space-between; }
+      .partner .partner-content ul li {
+        width: 1.561rem;
+        height: 0.524rem;
+        cursor: pointer; }
+        .partner .partner-content ul li img {
+          width: 100%;
+          height: 100%; }
+
+/*# sourceMappingURL=text.css.map */

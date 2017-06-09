@@ -1,0 +1,104 @@
+$sideWidth:12.726rem;
+$sideHeight:28.296rem;
+$logoWidth:1.644rem;
+$logoHeight:1.2rem;
+$logoMargin:1.704rem 10.444rem 1.526rem 0.593rem;
+$menuMargin:1.244rem 0 0;
+$menuHeight:2.8rem;
+@mixin icon($width,$height,$top){
+	width: $width;
+	height: $height;
+	position: absolute;
+	left: 0.593rem;
+	top: $top;
+	opacity: 0.54;
+}
+#sideBar{
+	width: $sideWidth;
+	height: 100%;
+	background: url(../img/sideBar.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	top: 0;
+	left: -$sideHeight;
+	z-index: 1000;
+	.logo_side{
+		width: $logoWidth;
+		height:$logoHeight;
+		margin:$logoMargin;
+		background: url(../img/logo2.png) no-repeat;
+		background-size: 100% 100%;
+		a{
+			display: block;
+			text-indent: -99999rem;
+			text-decoration: none;
+		}
+	}
+	#menu{
+		width: $sideWidth;
+		margin:$menuMargin;
+		a{
+			display: block;
+			width: 100%;
+			height: $menuHeight;
+			position: relative;
+			text-decoration: none;
+			img{
+				@include icon(1.319rem,1.319rem,0.756rem);
+			}
+			span{
+				font-size: 0.83rem;
+				color: #fff;
+				opacity: 0.54;
+				position: absolute;
+				top: 0.756rem;
+				left: 2.281rem;
+				text-decoration: none;
+				
+			}
+		}
+		a:hover {
+			background: #141b22;
+			img{
+				opacity: 1;
+			}
+			span{
+				opacity: 1;
+				color: #fdcb31;
+			}
+		}
+		.second{
+			img{
+				@include icon(1.126rem,1.126rem,0.815rem);
+			}
+		}
+		.third{
+			img{
+				@include icon(1.052rem,1.022rem,0.963rem);
+			}
+		}
+		.forth{
+			img{
+				@include icon(1.067rem,1.23rem,0.859rem);
+			}
+		}
+		.fifth{
+			img{
+				@include icon(1.022rem,1.096rem,0.859rem);
+			}
+		}
+		.sixth{
+			img{
+				@include icon(1.037rem,1.141rem,0.859rem);
+			}
+		}
+	}
+	.settings{
+		img{
+			@include icon(1.081rem,1.081rem,0.785rem);
+		}
+	}
+}
+.hide{
+	overflow: hidden;
+}

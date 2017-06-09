@@ -1,0 +1,104 @@
+html {
+  font-size: 20px; }
+
+body [v-cloak] {
+  display: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.Bo-lun {
+  width: 17.7rem;
+  overflow: hidden;
+  position: relative; }
+  .Bo-lun ul {
+    height: 6.176rem;
+    overflow: hidden;
+    margin-left: -17.7rem; }
+    .Bo-lun ul li {
+      width: 17.7rem;
+      height: 6.176rem; }
+      .Bo-lun ul li div {
+        margin-top: 1.34rem;
+        margin-left: 4.078rem;
+        color: white;
+        width: 9.532rem; }
+        .Bo-lun ul li div h1 {
+          font-size: 0.466rem;
+          font-weight: bolder;
+          text-align: center; }
+        .Bo-lun ul li div h2 {
+          text-align: center;
+          font-size: 0.233rem;
+          line-height: 0.466rem;
+          margin-top: 0.408rem; }
+        .Bo-lun ul li div h3 {
+          text-align: center;
+          margin-top: 0.408rem;
+          font-style: italic;
+          font-size: 0.163rem; }
+    .Bo-lun ul li.B-banner {
+      background: url(../../../dist/B-banner.png);
+      background-size: 100%; }
+    .Bo-lun ul li.B-banner1 {
+      background: url(../../../dist/B-banner1.jpg);
+      background-size: 100%; }
+    .Bo-lun ul li.B-banner2 {
+      background: url(../../../dist/B-banner2.jpg);
+      background-size: 100%; }
+  .Bo-lun .B-left {
+    width: 0.636rem;
+    height: 0.636rem;
+    z-index: 20;
+    position: absolute;
+    top: 2.4rem;
+    left: 0.711rem;
+    background: url(../../../dist/zl.png) no-repeat; }
+  .Bo-lun .B-right {
+    top: 2.4rem;
+    right: 0.711rem;
+    position: absolute;
+    width: 0.636rem;
+    z-index: 20;
+    height: 0.636rem;
+    background: url(../../../dist/yl.png) no-repeat; }
+
+.B-content {
+  padding-left: 1.282rem;
+  padding-right: 1.037rem;
+  padding-top: 0.233rem; }
+
+.B-con {
+  width: 4.871rem;
+  border: 1px solid #e1e1e1;
+  border-left: 0;
+  margin-right: 0.151rem;
+  margin-top: 0.233rem; }
+  .B-con img {
+    width: 100%;
+    height: 100%; }
+  .B-con h1 {
+    font-size: 0.245rem;
+    color: #00b5e2;
+    font-weight: bolder;
+    margin-top: 0.291rem;
+    margin-left: 0.303rem; }
+  .B-con h2 {
+    font-style: italic;
+    font-size: 0.163rem;
+    margin-bottom: 0.35rem;
+    margin-top: 0.326rem;
+    margin-left: 0.303rem; }
+
+.B-btn a {
+  float: left;
+  width: 2.738rem;
+  height: 0.699rem;
+  text-align: center;
+  line-height: 0.699rem;
+  border: 2px solid #e3e3e3;
+  color: #3c3c3c;
+  margin-top: 0.291rem;
+  margin-left: 7.469rem; }
+
+/*# sourceMappingURL=blogs.css.map */

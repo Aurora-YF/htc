@@ -1,0 +1,180 @@
+$baseFontSize:10px !default;
+$gray:#ccc !default;
+@import "lunbo.scss";
+@import "banner.scss";
+@import "text.scss";
+@import "foot.scss";
+@import "vr.scss";
+@import "developer.scss";
+@import "server.scss";
+@import "blogs.scss";
+// pixels to rems
+@function pxToRem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+$clientWidth:1519px;
+$clientHeight:70px;
+$logoWidth:114px;
+$logoHeight: 28px;
+$logoMargin:22px 0 20px 120px;
+$navWidth:431px;
+$navHeight:70px;
+$navMargin:49px;
+$orderWidth:135px;
+$orderHeight: 42px; 
+$orderMargin:18px 24px 10px 0;
+$downloadWidth:164px;
+$downloadMargin:18px 0 10px 0;
+$loginWidth:127px;
+$loginHeight:23px;
+$loginMargin:22px 0 25px 150px;
+
+@mixin orderVive($width,$height,$margin){
+	width: $width;
+	height: $height;
+	border: 2px solid #00c9fb;
+	box-sizing:border-box;
+	border-radius: 20px;
+	margin:$margin;
+	text-align: center;
+	line-height: 36px;
+	a{
+		display: block;
+		font-size: 16px;
+		font-family: '微软雅黑体';
+		text-decoration: none;
+		color: #00b5e2;	
+	}
+}
+html{
+  font-size:20px;
+  font-family: "Fakt-Normal",Helvetica,Arial,'微软雅黑體','Microsoft YaHei';
+}
+header{
+	height: $clientHeight;
+	position: relative;
+	z-index: 10000;
+	.navbar-default{
+		width: $clientWidth;
+		position: fixed;
+		top: 0;	
+		background: #111820;
+		.navbar-header{
+			.navbar-toggle{
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				margin:15px 0 0 0;
+				border: none;
+				top: 0;
+				left: 16.313rem;
+				padding: 0;
+				span{
+					background-color: #fff;
+					width: 30px;
+					height: 2px;
+					margin-top: 6px;
+				}
+			}
+			.navbar-toggle:hover{
+				background: none;
+			}
+			.navbar-toggle:active{
+				transform-origin:center;
+				transition:1s all ease;
+				transform:rotate(360deg);
+			}
+		}
+		.navbar-brand{
+			width: $logoWidth;
+			height: $logoHeight;
+			background: url(../../../dist/logo.png),no-repeat;
+			background-size: 100%;
+			margin:$logoMargin;
+			a{
+				display: block;
+				text-indent: -9999px;
+			}
+		}
+		.navbar-nav{
+			width: $navWidth;
+			height: $navHeight;
+			margin-left: $navMargin;
+			display: flex;
+			li{
+				margin-right: 30px;
+				line-height: $navHeight;
+				box-sizing:border-box;
+				a{
+					display: block;
+					color: #ccc;
+					font-size: 16px;
+					font-family: '雅黑';
+					text-decoration: none;
+				}
+			}
+			.last{
+					margin-right: 0;
+				}
+			li:hover{
+				border-bottom: 4px solid #00b5e2;
+				a{
+					color:#fff;
+				}
+			}
+		}
+		#htcVive{
+			width: 659px;
+			margin-left: 30px;
+			#orderVive{
+			@include orderVive($orderWidth,$orderHeight,$orderMargin);
+			}
+			#orderVive:hover{
+				background: #00b5e2;
+				a{
+					color: #000;
+				}
+			}
+			#downloadVive{
+				@include orderVive($downloadWidth,$orderHeight,$downloadMargin);
+			}
+			#downloadVive:hover{
+				background: #00b5e2;
+				a{
+					color: #000;
+				}
+			}
+			#login{
+				width: $loginWidth;
+				height: $loginHeight;
+				margin:$loginMargin;
+				position: relative;
+				a{
+					display: block;
+					height: 16px;
+					color: #fff;
+					font-size: 16px;
+					font-family: '微软雅黑';
+					position: absolute;
+					left: 0;
+					bottom: 28px;
+					text-decoration: none;
+
+				}
+			}
+			#login:hover{
+				border: none;
+			}
+		}
+		.htc{
+				width: 0.618rem;
+				height: 0.233rem;
+				background: url(../../../dist/htc.png),no-repeat;
+				background-size: 100% 100%;
+				position: absolute;
+				right: 2.33rem;
+				top: 0.28rem;
+				z-index: 1;
+			}
+	}
+}

@@ -1,0 +1,341 @@
+@charset "UTF-8";
+.vr_title {
+  width: 17.7rem;
+  height: 0.583rem;
+  background: #3c3c3c;
+  z-index: 1000;
+  position: relative; }
+  .vr_title .vr_con {
+    width: 12.095rem;
+    height: 100%;
+    margin-left: 1.573rem; }
+    .vr_title .vr_con li {
+      height: 100%;
+      float: left;
+      margin-right: 0.816rem;
+      display: flex; }
+      .vr_title .vr_con li a {
+        display: block;
+        text-align: center;
+        line-height: 0.583rem;
+        color: #fff;
+        font-size: 0.163rem;
+        font-family: "微软雅黑体"; }
+      .vr_title .vr_con li a:hover {
+        text-decoration: none;
+        border-bottom: 0.058rem solid #00b5e2; }
+  .vr_title .title_buy {
+    width: 1.41rem;
+    height: 0.583rem;
+    position: fixed;
+    background: #41464d;
+    right: 1.037rem;
+    top: 70px; }
+    .vr_title .title_buy a {
+      display: block;
+      width: 0.21rem;
+      float: left;
+      height: 0.175rem;
+      background: url(../../../dist/vr_buy.png) no-repeat;
+      background-size: 100% 100%;
+      margin: 0.21rem 0 0 0.35rem; }
+    .vr_title .title_buy div {
+      float: right;
+      width: 0.326rem;
+      height: 0.326rem;
+      background: #00b5e2;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+      margin-top: 0.128rem;
+      text-align: center;
+      line-height: 0.326rem;
+      color: #fff; }
+
+.vr_video {
+  width: 17.7rem;
+  height: 5.64rem;
+  position: relative;
+  z-index: 1; }
+  .vr_video video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .vr_video .video_con {
+    width: 8.867rem;
+    margin: 1.457rem auto;
+    z-index: 1000;
+    position: relative; }
+    .vr_video .video_con h3 {
+      width: 4.451rem;
+      font-size: 0.361rem;
+      height: 0.385rem;
+      margin: 0 auto;
+      color: #e9eaeb;
+      font-weight: bolder; }
+      .vr_video .video_con h3 span {
+        font-family: "微软雅黑体"; }
+    .vr_video .video_con p {
+      width: 8.867rem;
+      height: 0.862rem;
+      margin-top: 0.408rem;
+      text-align: center;
+      font-size: 0.204rem;
+      color: #e9eaeb;
+      font-weight: 600; }
+    .vr_video .video_con .video_btn {
+      width: 3.554rem;
+      margin: 0.396rem auto; }
+      .vr_video .video_con .video_btn .vr_test {
+        display: inline-block;
+        width: 1.76rem;
+        height: 0.466rem;
+        background: #00b5e2;
+        text-align: center;
+        line-height: 0.466rem;
+        font-size: 0.175rem;
+        border-radius: 0.699rem;
+        margin-right: 0.175rem;
+        color: #fff; }
+      .vr_video .video_con .video_btn .vr_dingGou {
+        display: inline-block;
+        width: 1.526rem;
+        height: 0.466rem;
+        background: #00b5e2;
+        text-align: center;
+        line-height: 0.466rem;
+        font-size: 0.175rem;
+        border-radius: 0.699rem;
+        margin-right: 0;
+        color: #fff; }
+      .vr_video .video_con .video_btn a:hover {
+        color: #000;
+        text-decoration: none; }
+
+.vr_swiper {
+  width: 17.7rem; }
+  .vr_swiper .vr_middle {
+    width: 14.915rem;
+    margin: 1.363rem auto 0.687rem; }
+    .vr_swiper .vr_middle .header {
+      width: 10.429rem; }
+      .vr_swiper .vr_middle .header span {
+        font-size: 0.385rem;
+        color: #3c3c3c;
+        font-family: "微软雅黑体"; }
+      .vr_swiper .vr_middle .header .bold {
+        font-weight: 900; }
+      .vr_swiper .vr_middle .header p {
+        height: 0.524rem;
+        font-size: 0.186rem;
+        margin-top: 0.385rem;
+        font-family: "微软雅黑体";
+        color: #3c3c3c; }
+  .vr_swiper .vr_lunbo {
+    width: 17.7rem;
+    height: 11.28rem;
+    position: relative; }
+    .vr_swiper .vr_lunbo .lunbo_img {
+      width: 14.915rem;
+      height: 9.87rem;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden; }
+      .vr_swiper .vr_lunbo .lunbo_img div {
+        height: 100%;
+        position: absolute;
+        left: -14.915rem; }
+        .vr_swiper .vr_lunbo .lunbo_img div ul {
+          width: 14.915rem;
+          height: 100%;
+          position: absolute; }
+          .vr_swiper .vr_lunbo .lunbo_img div ul li {
+            width: 7.388rem;
+            height: 100%;
+            float: left;
+            position: absolute;
+            left: 0; }
+            .vr_swiper .vr_lunbo .lunbo_img div ul li img {
+              width: 100%;
+              height: 100%; }
+          .vr_swiper .vr_lunbo .lunbo_img div ul .two {
+            left: 7.527rem; }
+    .vr_swiper .vr_lunbo .pre {
+      width: 0.28rem;
+      height: 0.28rem;
+      transform: rotate(-45deg);
+      color: #000;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.14rem;
+      font-size: 0.408rem;
+      left: 0.804rem;
+      right: "0";
+      font-weight: bolder;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000; }
+    .vr_swiper .vr_lunbo .next {
+      width: 0.28rem;
+      height: 0.28rem;
+      transform: rotate(-225deg);
+      color: #000;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.14rem;
+      font-size: 0.408rem;
+      left: "0";
+      right: 0.804rem;
+      font-weight: bolder;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000; }
+    .vr_swiper .vr_lunbo .Btn {
+      width: 1.282rem;
+      height: 0.117rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      margin-left: -0.641rem;
+      bottom: 1.037rem;
+      cursor: pointer; }
+      .vr_swiper .vr_lunbo .Btn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        background: #888c90;
+        border-radius: 50%; }
+      .vr_swiper .vr_lunbo .Btn .active {
+        background: #70cdf0; }
+    .vr_swiper .vr_lunbo .lastBtn {
+      width: 0.35rem;
+      height: 0.117rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      margin-left: -0.175rem;
+      bottom: 1.037rem;
+      cursor: pointer; }
+      .vr_swiper .vr_lunbo .lastBtn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        background: #888c90;
+        border-radius: 50%; }
+      .vr_swiper .vr_lunbo .lastBtn .active {
+        background: #70cdf0; }
+
+.photo {
+  width: 17.7rem;
+  position: relative; }
+  .photo .top {
+    height: 3.531rem;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .photo .top .first {
+      width: auto;
+      height: 3.531rem;
+      z-index: 1; }
+    .photo .top .second {
+      width: 7.085rem;
+      height: 3.531rem;
+      z-index: 100;
+      left: 3.542rem; }
+    .photo .top .third {
+      width: 7.073rem;
+      height: 3.531rem;
+      position: absolute;
+      right: 0; }
+    .photo .top li {
+      position: absolute; }
+      .photo .top li img {
+        width: 100%;
+        height: 3.531rem; }
+  .photo .bottom {
+    height: 3.531rem;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .photo .bottom .first {
+      width: 7.073rem;
+      height: 3.531rem;
+      position: absolute; }
+    .photo .bottom .second {
+      width: 7.085rem;
+      height: 3.531rem;
+      z-index: 100;
+      left: 7.073rem; }
+    .photo .bottom .third {
+      width: auto;
+      height: 3.531rem;
+      z-index: 1;
+      right: 0; }
+    .photo .bottom li {
+      position: absolute; }
+      .photo .bottom li img {
+        width: 100%;
+        height: 3.531rem; }
+
+.vr_banner {
+  width: 17.7rem;
+  height: 6.444rem;
+  position: relative; }
+  .vr_banner .pre {
+    z-index: 1000;
+    width: 0.28rem;
+    height: 0.28rem;
+    transform: rotate(-45deg);
+    color: #000;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.14rem;
+    font-size: 0.408rem;
+    left: 0.804rem;
+    right: "0";
+    font-weight: bolder;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000; }
+  .vr_banner .next {
+    z-index: 1000;
+    width: 0.28rem;
+    height: 0.28rem;
+    transform: rotate(-225deg);
+    color: #000;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.14rem;
+    font-size: 0.408rem;
+    left: "0";
+    right: 0.804rem;
+    font-weight: bolder;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000; }
+  .vr_banner .btn {
+    width: 0.583rem;
+    height: 0.117rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.291rem;
+    bottom: 1.037rem;
+    cursor: pointer;
+    bottom: 0.245rem; }
+    .vr_banner .btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      background: #888c90;
+      border-radius: 50%; }
+    .vr_banner .btn .active {
+      background: #70cdf0; }
+  .vr_banner ul {
+    height: 6.444rem;
+    position: absolute; }
+    .vr_banner ul li {
+      height: 100%; }
+      .vr_banner ul li img {
+        width: 100%;
+        height: 100%; }
+
+/*# sourceMappingURL=vr.css.map */

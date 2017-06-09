@@ -1,0 +1,462 @@
+$clientWidth:17.7rem;
+$contentHeight:9.497rem;
+$tWidth:10.114rem;
+$tMargin:3.496rem 0 0 3.869rem;
+$figureHeight:6.118rem;
+$photoWidth:14.158rem;
+$photoHeight:5.442rem;
+$photoMargin:0 1.771rem 0.466rem 1.771rem;
+$btnWidth:0.117rem;
+$btnHeight:0.117rem;
+$btnMargin:0 0.058rem;
+$newWidth:14.228rem;
+$newFirstWidth:3.997rem;
+$newChildHeight:5.884rem; 
+$newSecondWidth:6.164rem;
+$newThirdWidth:3.985rem;
+$newMargin:0.466rem 1.748rem 1.177rem 1.748rem;
+$thumbnailWidth:13.983rem;
+$thumbnailHeight:1.515rem;
+$thumbnailMargin:0 1.864rem;
+$vivePortHeight:1.492rem;
+$vivePortBtnWidth:1.829rem;
+$vivePortBtnHeight:0.466rem;
+$playWidth:1.725rem;
+$playHeight:0.513rem;
+$mapHwidth:1.585rem;
+$mapHMargin:0.909rem 8.052rem 0.373rem 8.052rem;
+$mapPwidth:856px;
+$mapPMargin: 0 3.869rem 0.769rem 3.869rem;
+$contentWidth:8.331rem;
+$contentHeigth:1.049rem;
+$contentMargin:1.13rem 1.037rem 1.55rem 2.82rem;
+$partnerWidth:12.072rem;
+$partnerHeight:3.461rem;
+$partnerMargin:1.34rem auto 1.305rem;
+@import "lunbo.scss";
+@mixin oBtn($width,$height){
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+	text-align: center;
+	line-height: $height;
+	color: #fff;
+	font-size: 0.186rem;
+	top: 50%;
+	left: 50%;
+	margin-left: $width / -2;
+	text-decoration: none;
+	background: #00b5e2;
+	border-radius:0.233rem;
+}
+@mixin allBtn($left,$right){
+	width: 1.678rem;
+	height: 0.501rem;
+	background: #00b5e2;
+	margin-left: $left;
+	margin-right:$right;
+	margin-bottom: 0.99rem;
+	border-radius: 0.233rem;
+	float: left;
+	text-align: center;
+	line-height: 0.501rem;
+	font-size: 0.186rem;
+	color: #fff;
+	text-decoration: none;
+}
+.figurePhoto{
+	width: $clientWidth;
+	span{
+		display: block;
+		width: $clientWidth;
+		height: 2.33rem;
+		background: #fff;
+	}
+	.title{
+		width: $tWidth;
+		margin:$tMargin;
+		overflow: hidden;
+		h3{
+			width: $tWidth;
+			text-align: center;
+			font-size: 0.408rem;
+			font-weight: 800;
+			font-family: "微软雅黑体";
+			margin-bottom: 0.385rem;
+			b{
+				width: 133px;
+				font-size: 0.408rem;
+				font-weight: 400;
+			}
+		}
+		p{
+			width: $tWidth;
+			font-size: 0.204rem;
+			text-align: center;
+			font-family: "微软雅黑体";
+			font-weight: 400;
+			margin-bottom: 0.524rem;
+		}
+	}
+	#figure{
+		width: $clientWidth;
+		height: $figureHeight;
+		position: relative;
+		.figure_box{
+			width: $photoWidth;
+			height: $photoHeight;
+			margin:$photoMargin;
+			overflow: hidden;
+			position: relative;
+			.figure_png{
+				height: 5.442rem;
+				position: absolute;
+				display: flex;
+				left: -14.158rem;
+				cursor: pointer;
+				li{
+					width: $photoWidth;
+					height: $photoHeight;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+		.figure_btn{
+			display: flex;
+			position: absolute;
+			bottom: 0.338rem;
+			left: 50%;
+			margin-left: -0.35rem;
+			li{
+				width: $btnWidth;
+				height: $btnHeight;
+				margin:$btnMargin;
+				border-radius: 50%;
+				background: #888c90;
+				cursor: pointer;
+			}
+			li.active{
+				background:#70cdf0;
+			}
+		}
+		#page_pre{
+			@include page(0.408rem,"0");
+		}
+		#page_next{
+			@include page("0",0.408rem);
+		}
+	}
+	.news{
+		width: $newWidth;
+		margin:$newMargin;
+		display: flex;
+		.first{
+			width: $newFirstWidth;
+			height: $newChildHeight;
+			margin-right: 0.035rem;
+			h5{
+				width: 2.191rem;
+				font-size: 0.326rem;
+				letter-spacing: 0.02rem;
+				color: #3c3c3c;
+				padding-left: 0.023rem;
+			}
+			h4{
+				width: 1.573rem;
+				font-size: 0.373rem;
+				color: #3c3c3c;
+				font-weight: 800;
+			}
+			div{
+				width: $newFirstWidth;
+				height: 4.894rem;
+				margin-top:0.233rem;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.second{
+			width: $newSecondWidth;
+			height: $newChildHeight;
+			margin-right: 0.047rem;
+			.top{
+				width: $newSecondWidth;
+				height: 3.822rem;
+				margin-bottom: 0.035rem;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.bottom{
+				width: $newSecondWidth;
+				height: 2.028rem;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.third{
+			width: $newThirdWidth;
+			height: $newChildHeight;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.title{
+	width: $clientWidth;
+	position: relative;
+	h6{
+		width: 4.719rem;
+		font-size: 0.385rem;
+		font-family: "微软雅黑体";
+		position: absolute;
+		text-align: center;
+		color: #3c3c3c;
+		left: 50%;
+		margin-left: -2.354rem;
+		top: 0;
+		span{
+			font-weight: 700;
+		}
+	}
+}
+.about{
+	height: 1.235rem;
+}
+.mask{
+	width: $clientWidth;
+	background: url(../../../dist/mask.png);
+	background-size: 100%;
+	position: static;
+	z-index: 100000;
+	.banner{
+	width: $clientWidth;
+	height: 6.036rem;
+	cursor: pointer;
+	img{
+		width: 100%;
+		// height: 100%;
+	}
+}
+.thumb{
+	background: #000;
+	.thumbnail{
+		width: $thumbnailWidth;
+		margin: $thumbnailMargin;
+		display: flex;
+		border: none;
+		padding: none;
+		li{
+			width: $thumbnailWidth / 5;
+			height: $thumbnailHeight;
+			cursor: pointer;
+			img{
+				width: 100%;
+				height: 100%;
+				opacity: 0.9;
+			}
+		}
+	}
+	.viveport-bg{
+		width: $clientWidth;
+		height: $vivePortHeight;
+		position: relative;
+		img{
+			width:100%;
+			height: 100%; 
+		}
+		a{
+			@include oBtn($vivePortBtnWidth,$vivePortBtnHeight);
+		}
+		a:hover{
+			color: #000;
+		}
+	}	
+}
+}
+.video-two{
+	width: $clientWidth;
+	height: 7.551rem;
+	position: relative;
+	video{
+		width: 100%;
+		height: 7.551rem;
+		position: relative;
+		
+	}
+	a{
+		@include oBtn($playWidth,$playHeight);
+		z-index: 1000;
+		margin-top: 1.282rem;
+		.icon-play{
+			display: line-block;
+			width: 0.093rem;
+			height: 0.151rem;
+			background: url(../../../dist/play.png) no-repeat -11px -2px;
+			position: absolute;
+			left: 0.28rem;
+			top: 0.198rem;
+		}
+	}
+	a:hover{
+		color: #000;
+	}
+}
+.map{
+	width: $clientWidth;
+	background: url(../../../dist/map.jpg) no-repeat;
+	background-size: 100%;
+	h3{
+		width: $mapHwidth;
+		color: #e9eaeb;
+		margin: $mapHMargin;
+		font-size: 0.396rem;
+	}
+	p{
+		width:$mapPwidth;
+		margin:$mapPMargin;
+		font-size: 0.221rem;
+		text-align: center;
+		color: #e9eaeb;
+	}
+	.left{
+		@include allBtn(7.05rem,'0');
+		margin-right: 0.128rem;
+	}
+	.right{
+		@include allBtn('0',7.038rem);
+		margin-left: 0.128rem;
+	}
+	a:hover{
+		background: #00cfe2;
+		color: #000;
+	}
+}
+.register{
+	width: $clientWidth;
+	background: #00b5e2;
+	overflow: hidden;
+	.con{
+		position: relative;
+		width: $contentWidth;
+		height: $contentHeigth;
+		margin:$contentMargin;
+		.news{
+			width: 3.344rem;
+			color: #fff;
+			font-size: 0.35rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		input{
+			width: 3.484rem;
+			height: 0.454rem;
+			background: rgba(0,0,0,0);
+			border: none;
+			position: absolute;
+			top: 0;
+			left: 4.847rem;
+			font-size: 0.186rem;
+		}
+		input::-webkit-input-placeholder{
+			color: #89ddf2;
+		}
+		#mail{
+			width: 3.484rem;
+			height: 0.303rem;
+			position: absolute;
+			top: 0.629rem;
+			left: 4.847rem;
+			.dropdown-toggle{
+				width: 0.186rem;
+				height: 0.28rem;
+				padding: 0;
+				position: absolute;
+				right: 0;
+				background-color: #eee;
+				border: none;
+				cursor: pointer;
+			}
+			.btn-defalut{
+				width: 3.263rem;
+				height: 0.28rem;
+				padding: 0;
+				text-align: left;
+				background: rgba(0,0,0,0);
+				border: none;
+				color: #fff;
+				font-size: 0.151rem;
+			}
+			.dropdown-menu{
+				width: 3.263rem;
+			}
+		}
+	}
+	.register-btn{
+		display: block;
+		width: 2.028rem;
+		height: 0.443rem;
+		border-radius: 0.233rem;
+		background: #fff;
+		text-align: center;
+		line-height: 0.443rem;	
+		border:1px solid #3ad5fb;
+		margin-left:1.561rem;
+		margin-top: 1.748rem;
+		color: #00b5e2;
+		font-size: 0.175rem;
+		text-decoration: none;
+	}
+}
+.partner{
+	width: $clientWidth;
+	overflow: hidden;
+	.partner-content{
+		width: $partnerWidth;
+		height:$partnerHeight;
+		margin:$partnerMargin;
+		h4{
+			width: 5.407rem;
+			margin:0 auto;
+			font-size: 0.361rem;
+			font-family: "微软雅黑体";
+			span{
+				font-weight: 900;
+			}
+		}
+		p{
+			width: $partnerWidth;
+			margin:0.408rem 0 1.224rem;
+			height: 0.559rem;
+			line-height: 0.559rem;
+			text-align: center;
+			font-size: 0.21rem;
+		}
+		ul{
+			width: $partnerWidth;
+			display: flex;
+			justify-content:space-between;
+			li{
+				width: 1.561rem;
+				height: 0.524rem;
+				cursor: pointer;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<!-- <script src="angular-1.5.6.js"></script> -->
+	<style type="text/css">
+	*{
+		list-style: none;
+		padding: 0;
+		margin:0;
+	}
+	@keyframes zhuandong1 {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+		body{
+			width: 16.0rem;
+			height: 28.444rem;
+			background: url(img/bgimg.png) no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.toph{
+			width: 16.0rem;
+			height: 3.407rem;
+		}
+		.btnz{
+			width: 0.933rem;
+			height: 1.267rem;
+			position: absolute;
+			top: 0.889rem;
+			cursor: pointer;
+			left: 0.741rem;
+		}
+		.btnz span{
+			width: 0.933rem;
+			height: 0.089rem;
+			background: #fdcb31;
+			margin-top: 0.333rem;
+			display: block;
+			opacity: 0.6;
+		}
+		h4{
+			font-family: "Times New Roman",Georgia,Serif;
+			font-size: 0.83rem;
+			margin-left: 4.741rem;
+			color: rgba(255,255,255,0.4);
+			position:absolute;
+			top:1.037rem;
+		}
+		.chazhao{
+			width: 0.889rem;
+			height: 0.889rem;
+			background: url(img/chazhao.png) no-repeat;
+			background-size: 100% 100%;
+			position:absolute;
+			left:11.852rem;
+			top:1.259rem;
+			opacity: 0.8;
+		}
+		.sandian{
+			width: 0.163rem;
+			height: 0.933rem;
+			position: absolute;
+			left:14.667rem;
+			top:1.185rem;
+		}
+		.sandian span{
+			width: 0.163rem;
+			height: 0.163rem;
+			background: #fdcb31;
+			border-radius: 50%;
+			margin-top: 0.148rem;
+			display: block;
+			opacity: 0.6;
+		}
+		.m-loading{
+			width: 14.074rem;
+			height: 1.63rem;
+			position: absolute;
+			left:0.741rem;
+			top:4.148rem;
+			/*border: 1px solid #ccc;*/
+		}
+		.jindutiao{
+			width: 14.074rem;
+			height: 0.089rem;
+			display: block;
+			background: #606c76;
+			/*background: red;*/
+		}
+		.jindu{
+			width: 0;
+			height: 0.148rem;
+			display: block;
+			background: #91979b;
+			position: absolute;
+			top:-0.03rem;
+			left: 0;
+		}
+		.m-loading span{
+			font-size: 0.444rem;
+			color:#6e7276;
+			position: absolute;
+			top:0.667rem;
+		}
+		.endtime{
+			right:0;
+		}
+		.gequinfo{
+			width: 6.222rem;
+			height: 2.074rem;
+			/*border: 1px solid #ccc;*/
+			position: absolute;
+			top:5.778rem;
+			left: 50%;
+			margin-left: -3.111rem;
+		}
+		.geming{
+			font-size: 0.622rem;
+			text-align: center;
+			color:#ebeced;
+			opacity: 0.5;
+		}
+		.geshou{
+			font-size: 0.533rem;
+			text-align: center;
+			margin-top: 0.593rem;
+			color: #b2b6ba;
+			opacity: 0.4;
+		}
+		.zhuanjitu{
+			background: url(img/ganghao.jpg) no-repeat;
+			background-size: 100% 100%;
+			width:10.37rem;
+			height: 10.37rem;
+			position: absolute;
+			left: 50%;
+			margin-left: -5.185rem;
+			top: 9.185rem;
+			border-radius: 50%;
+			box-shadow: 0.148rem 0.148rem 0.148rem 0.148rem black, -0.148rem -0.148rem 0.148rem 0.148rem black, -0.148rem 0.148rem 0.148rem 0.148rem black, 0.148rem -0.148rem 0.148rem 0.148rem black;
+		}
+		.playxx{
+			width: 14.074rem;
+			height: 0.889rem;
+			position: absolute;
+			top: 21.037rem;
+			left: 1.185rem;
+		}
+		.xunhuanfou{
+			width: 0.978rem;
+			height: 0.77rem;
+			background: url(img/xunhuan.png) no-repeat;
+			background-size: 100% 100%;
+			display: block;
+			float: left;
+			opacity: 0.5;
+		}
+		.daotui{
+			width: 1.067rem;
+			height: 0.77rem;
+			background: url(img/daotui.png) no-repeat;
+			background-size: 100% 100%;
+			display: block;
+			float: left;
+			margin-left: 2.222rem;
+		}
+		.playfou{
+			width: 0.741rem;
+			height: 0.8rem;
+			background: url(img/playfou.png) no-repeat;
+			background-size: 100% 100%;
+			display: block;
+			float: left;
+			margin-left: 2.459rem;
+		}
+		.kuaijin{
+			width: 1.067rem;
+			height: 0.77rem;
+			background: url(img/kuaijin.png) no-repeat;
+			background-size: 100% 100%;
+			display: block;
+			float: left;
+			margin-left: 2.015rem;
+		}
+		.tianjiag{
+			width: 0.889rem;
+			height: 0.889rem;
+			font-size:1.185rem;
+			color:#969a9f;
+			float: left;
+			margin-left: 2.222rem;
+			margin-top: -0.533rem;
+		}
+		.tiaojievol{
+			width: 14.37rem;
+			height: 1.481rem;
+			position: absolute;
+			left: 1.259rem;
+			top: 24.0rem;
+		}
+		.laba{
+			display: block;
+			background: url(img/laba.png) no-repeat;
+			background-size: 100% 100%;
+			width: 1.037rem;
+			height: 0.8rem;
+			margin-top: -0.222rem;
+		}
+		.voltiao{
+			width: 12.296rem;
+			height: 0.089rem;
+			display: block;
+			background:#575d65;
+			position: absolute;
+			top:0.148rem;
+			left:1.037rem;
+		}
+		.voldx{
+			width: 6.148rem;
+			height: 0.148rem;
+			display: block;
+			background:#94989b;
+			position: absolute;
+			top:0.119rem;
+			left:1.037rem;
+		}
+		.tab01,.tab02{
+			width: 16.0rem;
+			height: 14.519rem;
+		}
+		.tab02{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+	function getPos(obj){
+        var l=0;
+        var t=0;
+        while(obj){
+            l+=obj.offsetLeft;
+            t+=obj.offsetTop;
+            obj=obj.offsetParent;
+        }
+
+        return {left:l,top:t}
+    }
+	window.onload=window.onresize=function(){
+		document.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+    	var music = document.getElementById('music1');    
+    	var music_btn = document.getElementById('music2');
+    	var startTime=document.getElementById('starttime');
+    	var endTime=document.getElementById('endtime');
+    	var jindu=document.getElementById('jindu');
+    	var jindutiao=document.getElementById('jindutiao');
+    	var laba=document.getElementById('laba');
+    	var voldx=document.getElementById('voldx');
+    	var voltiao=document.getElementById('voltiao');
+    	var zhuanjtu=document.getElementById('zhuanjitu');
+		music.volume=0.5; 
+		function time(a){
+			function mss(){
+				if (Math.ceil(a%60)<10) {
+					return '0'+Math.ceil(a%60);
+				}else{
+					return Math.ceil(a%60);
+				}
+			}
+        return '0'+Math.floor(a/60)+':'+mss();
+		}
+	    //获取歌曲总时间    
+		endTime.innerHTML=time(music.duration);
+		//获取歌曲当前播放时间
+		console.log(music)
+		function currentTime(){
+			function mss1(){
+					if (Math.floor(music.currentTime%60)<10) {
+					return '0'+Math.floor(music.currentTime%60);
+				}else{
+					return Math.floor(music.currentTime%60);
+				}
+			}
+			return '0'+Math.floor(music.currentTime/60)+':'+mss1();
+		}
+
+
+		music_btn.onclick=function() { 
+	   		 if (music.paused){    
+	        music.play(); 
+	        // zhuanjitu.style.transition='60s'+' '+'all'+' '+'linear';
+	        // zhuanjitu.style.transform = 'rotate(360deg)';
+	        zhuanjitu.style.animation='60s'+' '+'zhuandong1'+' '+'linear'+' '+'infinite';
+		        timer=setInterval(function(){
+					startTime.innerHTML=currentTime();
+					jindu.style.width=(music.currentTime/music.duration)*14.074+'rem';
+
+					if(music.ended){
+						clearInterval(timer);
+						jindu.style.width=0;
+					}
+
+			    },1000);     
+		   	}else{    
+		        music.pause(); 
+				zhuanjitu.style.animationPlayState="paused";
+		        clearInterval(timer);     
+	   		}    
+		}; 
+		jindutiao.onclick=function(evt){
+			var disx=evt.clientX-getPos(jindutiao).left;
+			var ds=950/1080*document.documentElement.clientWidth;
+			var prob=disx/ds;
+			jindu.style.width=prob*14.074+'rem';
+			starttime.innerHTML=time(music.duration*prob);
+			// console.log(time(music.duration*prob));
+			music.currentTime=music.duration*prob;
+		};
+		jindu.onclick=function(evt){
+			var disx=evt.clientX-getPos(jindutiao).left;
+			var ds=950/1080*document.documentElement.clientWidth;
+			var prob=disx/ds;
+			jindu.style.width=prob*14.074+'rem';
+			starttime.innerHTML=time(music.duration*prob);
+			music.currentTime=music.duration*prob;
+		};
+		voltiao.onclick=function(evt){
+			var disx=evt.clientX-getPos(voltiao).left;
+			// console.log(document.documentElement.clientWidth);
+			var ds=830/1080*document.documentElement.clientWidth;
+			var prob=disx/ds;
+			voldx.style.width=prob*12.296+'rem';
+			var relVol=parseInt(100*prob)/100;
+    		music.volume=relVol;
+    		// console.log(prob,music.volume,relVol);
+		};
+		voldx.onclick=function(evt){
+			var disx=evt.clientX-getPos(voltiao).left;
+			var ds=830/1080*document.documentElement.clientWidth;
+			var prob=disx/ds;
+			voldx.style.width=prob*12.296+'rem';
+			var relVol=parseInt(100*prob)/100;
+    		music.volume=relVol;
+    		// console.log(prob,music.volume,relVol);
+		};
+		laba.onclick=function(muteSwitch){
+			var cVol=voldx.style.width;
+			if (muteSwitch==="on") {
+				voldx.attributes["data-volume"].nodeValue = music.volume;
+				voldx.attributes["data-width"].nodeValue = cVol;
+				music.volume=0.0;
+				voldx.style.width=0;
+			}
+			if (muteSwitch==="off") {
+				music.volume=voldx.attributes["data-volume"].nodeValue;
+				voldx.style.width=cVol;
+			}
+		};
+	};
+	</script>
+</head>
+<body>
+	<div class="toph">
+		<div class="btnz"><span></span><span></span><span></span></div>
+		<h4>正 在 播 放</h4>
+		<div class="chazhao"></div>
+		<div class="sandian"><span></span><span></span><span></span></div>
+	</div>
+	<div class="m-loading">
+		<p class="jindutiao" id="jindutiao"></p>
+		<p class="jindu" id="jindu"></p>
+		<span class="starttime" id="starttime">00:00</span>
+		<span class="endtime" id="endtime">00:00</span>
+	</div>
+	<div class="tab01">
+		<ul class="gequinfo">
+			<li class="geming">刚刚好</li>
+			<li class="geshou">薛之谦</li>
+		</ul>
+		<div class="zhuanjitu" id="zhuanjitu"></div>
+	</div>
+	<div class="tab02"></div>
+	<div class="playxx"><p class="xunhuanfou"></p><p class="daotui"></p><a href="javascript:;" class="playfou" id="music2"></a><p class="kuaijin"></p><p class="tianjiag">+</p></div>
+	<audio id="music1" src="ggh.mp3" loop="loop"></audio>
+	<div class="tiaojievol">
+		<span class="laba" id="laba"></span>
+		<p class="voltiao" id="voltiao"></p>
+		<p class="voldx" id="voldx"></p>
+	</div>
+</body>
+</html>

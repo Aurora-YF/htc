@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0">
+	<title>seek</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/seek.css">
+	<script src="js/vue.js"></script>
+	<script src="js/vue-resource.js"></script>
+	<script src="js/vie.js"></script>
+	<script>
+	window.onload=window.onresize=function(){
+		document.documentElement.style.fontSize = document.documentElement.clientWidth * 20 / 320 + 'px';
+		var v=new Vue({
+			el:'#box',
+			data:{
+				msg:'',
+				arr:[]
+			}
+		})
+		v.$watch('msg',function(){
+		this.$http({
+				url:'http://songsearch.kugou.com/song_search_v2',
+				method:'JSONP',
+				params:{
+					keyword:this.msg
+				},
+				jsonp:'callback'
+			}).then(function(res){
+				var json=res.data.data.lists;
+				this.arr=[];
+				for (var i = 0; i < json.length; i++) {
+						console.log(json[i].FileName)
+						this.arr.push({id:json[i].Audioid,hash:json[i].FileHash,name:json[i].FileName})
+				};
+				if (this.msg=='') {
+					this.arr=[]
+				};
+			},function(){})		
+		})				
+	}
+	</script>
+</head>
+<body>
+	<div data-role="page" id="box">
+	<div id="seek">
+		<a href="index.html"></a>
+		<input type="text" v-model="msg" placeholder="搜索音乐，歌手，用户">
+	</div>
+		<ul class="ul1">
+			<li v-for="s in arr |limitBy 16" track-by="$index">{{s.name}}</li>
+		</ul>
+</div>
+</body>
+</html>

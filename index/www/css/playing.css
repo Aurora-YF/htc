@@ -1,0 +1,188 @@
+@keyframes zhuandong1{
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+.m-loading{
+	width: 14.074rem;
+	height: 1.63rem;
+	position: absolute;
+	left:0.741rem;
+	top:4.148rem;
+			/*border: 1px solid #ccc;*/
+}
+.jindutiao{
+	width: 14.074rem;
+	height: 0.089rem;
+	display: block;
+	background: #606c76;
+			/*background: red;*/
+}
+.jindu{
+	width: 0;
+	height: 0.148rem;
+	display: block;
+	background: #91979b;
+	position: absolute;
+	top:-0.03rem;
+	left: 0;
+}
+.m-loading span{
+	font-size: 0.444rem;
+	color:#6e7276;
+	position: absolute;
+	top:0.667rem;
+}
+.endtime{
+	right:0;
+}
+.gequinfo{
+	width: 6.222rem;
+	height: 2.074rem;
+			/*border: 1px solid #ccc;*/
+	position: absolute;
+	top:5.778rem;
+	left: 50%;
+	margin-left: -3.111rem;
+}
+.geming{
+	font-size: 0.622rem;
+	text-align: center;
+	color:#ebeced;
+	opacity: 0.5;
+}
+.geshou{
+	font-size: 0.533rem;
+	text-align: center;
+	margin-top: 0.593rem;
+	color: #b2b6ba;
+	opacity: 0.4;
+}
+.zhuanjitu{
+	background: url(../img/ganghao.jpg) no-repeat;
+	background-size: 100% 100%;
+	width:10.37rem;
+	height: 10.37rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -5.185rem;
+	top: 9.185rem;
+	border-radius: 50%;
+	box-shadow: 0.148rem 0.148rem 0.148rem 0.148rem black, -0.148rem -0.148rem 0.148rem 0.148rem black, -0.148rem 0.148rem 0.148rem 0.148rem black, 0.148rem -0.148rem 0.148rem 0.148rem black;
+}
+.playxx{
+	width: 14.074rem;
+	height: 0.889rem;
+	position: absolute;
+	top: 21.037rem;
+	left: 1.185rem;
+}
+.xunhuanfou{
+	width: 0.978rem;
+	height: 0.77rem;
+	background: url(../img/xunhuan.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	opacity: 0.5;
+}
+.daotui{
+	width: 1.067rem;
+	height: 0.77rem;
+	background: url(../img/daotui.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	margin-left: 2.222rem;
+}
+.playfou{
+	width: 1.807rem;
+	height: 1.822rem;
+	background: url(../img/playxx.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	margin-left: 1.926rem;
+	margin-top:-0.593rem; 
+}
+.kuaijin{
+	width: 1.067rem;
+	height: 0.77rem;
+	background: url(../img/kuaijin.png) no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	margin-left: 2.015rem;
+}
+.tianjiag2{
+	width: 0.889rem;
+	height: 0.889rem;
+	font-size:1.185rem;
+	color:#969a9f;
+	float: left;
+	margin-left: 1.222rem;
+	margin-top: -0.533rem;
+}
+
+.tiaojievol{
+	width: 14.37rem;
+	height: 1.481rem;
+	position: absolute;
+	left: 1.259rem;
+	top: 24.0rem;
+}
+.laba{
+	display: block;
+	background: url(../img/laba.png) no-repeat;
+	background-size: 100% 100%;
+	width: 1.037rem;
+	height: 0.8rem;
+	margin-top: -0.222rem;
+}
+.voltiao{
+	width: 12.296rem;
+	height: 0.089rem;
+	display: block;
+	background:#575d65;
+	position: absolute;
+	top:0.148rem;
+	left:1.037rem;
+}
+.voldx{
+	width: 6.148rem;
+	height: 0.148rem;
+	display: block;
+	background:#94989b;
+	position: absolute;
+	top:0.119rem;
+	left:1.037rem;
+}
+.tab01,.tab02{
+	width: 16.0rem;
+	height: 14.519rem;
+}
+.tab02{
+	display: none;
+}
+#pagebox3{
+	width: 16.0rem;
+	height: 28.444rem;
+	background: url(../img/bgimg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#head3 h3{
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size: 0.83rem;
+	margin-left: -0.941rem;
+	color: rgba(255,255,255,0.4);
+	position:absolute;
+	top:1.037rem;
+}
+.zhuanjitu.active{
+	animation:60s zhuandong1 linear infinite;
+}

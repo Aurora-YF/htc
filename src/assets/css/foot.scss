@@ -1,0 +1,95 @@
+$clientWidth:17.7rem;
+$divWidth:1.165rem;
+$divHeight:0.315rem;
+$divMargin:0.221rem 0.233rem 0.28rem 1.387rem;
+$footHeight:5.826rem;
+$footLeftWidth:9.345rem;
+$listWidth:7.959rem;
+$listHeight:3.589rem;
+$listMargin:0.571rem 0 0 1.398rem;
+$dlWidth:1.993rem;
+.show{
+	width: $clientWidth;
+	overflow: hidden;
+	background: #0074cb;
+	z-index: 1000;
+	div{
+		width: $divWidth;
+		height: $divHeight;
+		color: #fff;
+		font-size: 0.268rem;
+		line-height: $divHeight;
+		font-family: "微软雅黑体";
+		margin:$divMargin;
+	}
+	ul{
+		width: $divWidth;
+		display: flex;
+		justify-content:space-between;
+		margin-top:0.256rem;
+
+		li{
+			a{
+				display: block;
+				width: 0.245rem;
+				height: 0.245rem;
+			}
+		}
+	}
+}
+.index_bottom{
+	width: $clientWidth;
+	height: $footHeight;
+	background: #111820;
+	z-index: 1000;
+	.bottom_left{
+		width: $footLeftWidth;
+		height: $footHeight;
+		position: relative;
+		.list{
+			width: $listWidth;
+			height: $listHeight;
+			margin:$listMargin;
+			dl{
+				width:$dlWidth;
+				margin-right: 0.99rem;
+				float: left;
+				dt{
+					width: $dlWidth;
+					font-size: 0.151rem;
+					color: #fff;
+					margin-bottom: 0.21rem;
+				}
+				dd{
+					a{
+						display: block;
+						width: $dlWidth;
+						text-decoration: none;
+						color: #aaaaaf;
+						margin-top: 0.21rem;
+						font-size: 0.151rem;
+					}
+				}
+			}
+			.last{
+				margin-right: 0;
+			}
+		}
+		.conpony{
+			width: 3.146rem;
+			left: 1.398rem;
+			bottom: 0.769rem;
+			color: #666;
+			font-size: 0.14rem;
+			position: absolute;
+		}
+		.bot_title{
+			width: 1.585rem;
+			font-size: 0.163rem;
+			color: #666;
+			position: absolute;
+			bottom: 0.175rem;
+			left: 1.398rem;
+		}
+	}
+}

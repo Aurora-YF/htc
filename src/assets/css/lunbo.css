@@ -1,0 +1,65 @@
+#lunbo {
+  width: 17.7rem;
+  height: 6.409rem;
+  position: relative;
+  overflow: hidden; }
+  #lunbo #pre {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: 0.466rem;
+    right: "0"; }
+  #lunbo #next {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: "0";
+    right: 0.466rem; }
+  #lunbo .lunbo-bg {
+    height: 6.409rem;
+    position: absolute;
+    left: -17.7rem; }
+    #lunbo .lunbo-bg li {
+      width: 17.7rem;
+      height: 6.409rem;
+      float: left; }
+      #lunbo .lunbo-bg li img {
+        width: 100%;
+        height: 100%; }
+  #lunbo .lunbo-btn {
+    width: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0.245rem;
+    margin-left: -0.583rem; }
+    #lunbo .lunbo-btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      border-radius: 50%;
+      background: #888c90;
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer; }
+    #lunbo .lunbo-btn li.active {
+      background: #71c9eb; }
+
+/*# sourceMappingURL=lunbo.css.map */

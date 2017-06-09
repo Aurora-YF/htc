@@ -1,0 +1,337 @@
+$clientWidth:17.7rem;
+$titleHeight:0.583rem;
+$conWidth:12.095rem;
+$videoHeight:5.64rem;
+$videoConWidth:8.867rem;
+$swiperWidth:14.915rem;
+$swiperHeight:11.28rem;
+$photoHeight:3.531rem;
+@mixin btn($width,$margin){
+	display: inline-block;
+	width: $width;
+	height: 0.466rem;
+	background: #00b5e2;
+	text-align: center;
+	line-height: 0.466rem;
+	font-size: 0.175rem;
+	border-radius: 0.699rem;
+	margin-right: $margin;
+	color: #fff;
+}
+@mixin play($rotate,$left,$right){
+	width: 0.28rem;
+	height: 0.28rem;
+	transform: rotate($rotate);
+	color: #000;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.14rem;
+	font-size: 0.408rem;
+	left: $left;
+	right: $right;
+	font-weight: bolder;
+	border-left: 2px solid #000;
+	border-top: 2px solid #000;
+}
+@mixin swiperBtn($width,$height,$left){
+	width: $width;
+	height: $height;
+	display: flex;
+	justify-content:space-between;
+	position: absolute;
+	left:50%;
+	margin-left: $left;
+	bottom: 1.037rem;
+	cursor: pointer;
+	li{
+		width: 0.117rem;
+		height: 0.117rem;
+		background: #888c90;
+		border-radius: 50%;
+	}
+	.active{
+		background: #70cdf0;
+	}
+}
+// 导航条
+.vr_title{
+	width: $clientWidth;
+	height: $titleHeight;
+	background: #3c3c3c;
+	z-index: 1000;
+	position: relative;
+	.vr_con{
+		width: $conWidth;
+		height: 100%;
+		margin-left:1.573rem;
+		li{
+			height: 100%;
+			float: left;
+			margin-right: 0.816rem;
+			display: flex;
+			a{
+				display: block;
+				text-align: center;
+				line-height: $titleHeight;
+				color: #fff;
+				font-size: 0.163rem;
+				font-family: "微软雅黑体";
+			}
+			a:hover{
+				text-decoration: none;
+				border-bottom: 0.058rem solid #00b5e2;
+			}
+		}
+	}
+	.title_buy{
+		width: 1.41rem;
+		height: $titleHeight;
+		position: fixed;
+		background: #41464d;
+		right: 1.037rem;
+		top: 70px;
+		a{
+			display: block;
+			width: 0.21rem;
+			float: left;
+			height: 0.175rem;
+			background: url(../../../dist/vr_buy.png) no-repeat;
+			background-size: 100% 100%;
+			margin: 0.21rem 0 0 0.35rem;
+		}
+		div{
+			float: right;
+			width: 0.326rem;
+			height: 0.326rem;
+			background: #00b5e2;
+			border-radius: 50%;
+			margin-right: 0.35rem;
+			margin-top: 0.128rem;
+			text-align: center;
+			line-height: 0.326rem;
+			color: #fff;
+		}
+	}
+}
+// 视频
+.vr_video{
+	width: $clientWidth;
+	height: $videoHeight;
+	position: relative;
+	z-index: 1;
+	video{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.video_con{
+		width: $videoConWidth;
+		margin:1.457rem auto;
+		z-index: 1000;
+		position: relative;
+		h3{
+			width: 4.451rem;
+			font-size: 0.361rem;
+			height: 0.385rem;
+			margin:0 auto;
+			color: #e9eaeb;
+			font-weight: bolder;
+			span{
+				font-family: "微软雅黑体";
+			}
+		}
+		p{
+			width: $videoConWidth;
+			height: 0.862rem;
+			margin-top: 0.408rem;
+			text-align: center;
+			font-size: 0.204rem;
+			color: #e9eaeb;
+			font-weight: 600;
+		}
+		.video_btn{
+			width: 3.554rem;
+			margin:0.396rem auto;
+			.vr_test{
+				@include btn(1.76rem,0.175rem);
+			}
+			.vr_dingGou{
+				@include btn(1.526rem,0);
+			}
+			a:hover{
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+}
+//虚拟现实头盔内部
+.vr_swiper{
+	width: $clientWidth;
+	.vr_middle{
+		width: $swiperWidth;
+		margin:1.363rem auto 0.687rem;
+		.header{
+			width: 10.429rem;
+			span{
+				font-size: 0.385rem;
+				color: #3c3c3c;
+				font-family: "微软雅黑体";
+			}
+			.bold{
+				font-weight: 900;
+			}
+			p{
+				height: 0.524rem;
+				font-size: 0.186rem;
+				margin-top: 0.385rem;
+				font-family: "微软雅黑体";
+				color: #3c3c3c;
+			}
+		}
+	}
+	.vr_lunbo{
+			width: $clientWidth;
+			height: $swiperHeight;
+			position: relative;
+			.lunbo_img{
+				width: $swiperWidth;
+				height: 9.87rem;
+				margin:0 auto;
+				position: relative;
+				overflow: hidden;
+				div{
+					height: 100%;
+					position: absolute;
+					left:-$swiperWidth;
+					ul{
+						width: $swiperWidth;
+						height: 100%;
+						position: absolute;
+						li{
+							width: 7.388rem;
+							height: 100%;
+							float: left;
+							position: absolute;
+							left: 0;
+							img{
+								width: 100%;
+								height: 100%;
+							}
+						}
+						.two{
+							left: 7.527rem;
+						}
+					}
+				}
+
+			}
+			.pre{
+				@include play(-45deg,0.804rem,'0');
+			}
+			.next{
+				@include play(-225deg,'0',0.804rem);
+			}
+			.Btn{
+				@include swiperBtn(1.282rem,0.117rem,-0.641rem);
+			}
+			.lastBtn{
+				@include swiperBtn(0.35rem,0.117rem,-0.175rem);
+			}
+	}
+}
+.photo{
+	width: $clientWidth;
+	position: relative;
+	.top{
+		height: $photoHeight;
+		width: 100%;
+		display: flex;
+		position: relative;
+		.first{
+			width: auto;
+			height: $photoHeight;
+			z-index: 1;
+		}	
+		.second{
+			width: 7.085rem;
+			height: $photoHeight;
+			z-index: 100;
+			left: 3.542rem;
+		}
+		.third{
+			width: 7.073rem;
+			height: $photoHeight;
+			position: absolute;
+			right: 0;
+		}
+		li{
+			position: absolute;
+			img{
+				width: 100%;
+				height: $photoHeight;
+			}
+		}
+	}
+	.bottom{
+		height: $photoHeight;
+		width: 100%;
+		display: flex;
+		position: relative;
+		.first{
+			width: 7.073rem;
+			height: $photoHeight;
+			position: absolute;
+		}	
+		.second{
+			width: 7.085rem;
+			height: $photoHeight;
+			z-index: 100;
+			left: 7.073rem;
+		}
+		.third{
+			width: auto;
+			height: $photoHeight;
+			z-index: 1;
+			right: 0;
+		}
+		li{
+			position: absolute;
+			img{
+				width: 100%;
+				height: $photoHeight;
+			}
+		}
+	}
+}
+.vr_banner{
+	width: $clientWidth;
+	height: 6.444rem;
+	position: relative;
+	.pre{
+		z-index: 1000;
+		@include play(-45deg,0.804rem,'0');
+	}
+	.next{
+		z-index: 1000;
+		@include play(-225deg,'0',0.804rem);
+	}
+	.btn{
+		@include swiperBtn(0.583rem,0.117rem,-0.291rem);
+		bottom: 0.245rem;
+	}
+	ul{
+		height: 6.444rem;
+		position: absolute;
+		li{
+			height: 100%;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<!-- <script src="angular-1.5.6.js"></script> -->
+	<link rel="stylesheet" href="css/diantai.css"/>
+	<link rel="stylesheet" href="css/sidebar.css"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/sideBar.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript">
+		window.onload=window.onresize=function(){
+			  document.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+			  var head=document.getElementById('head');
+			  var topd1=document.getElementById('topd1');
+			  var diantaixiang=document.getElementById('diantaixiang');
+			  var bofangniu=document.querySelector('.bofangniu');
+			  var zhuanjitu=document.querySelector('#zhuanpan');
+			  var bofangf=document.querySelector('#bofangf');
+			  // console.log(zhuanjitu);
+			  var music = document.getElementById('music1');    
+			  bofangniu.onclick=function(){
+			  	if (music.paused){    
+        		music.play(); 
+        		 zhuanjitu.style.animation='60s'+' '+'zhuandong1'+' '+'linear'+' '+'infinite';
+        		 bofangf.src="img/switch1.png";
+        		}else{    
+       			 music.pause(); 
+       			 zhuanjitu.style.animationPlayState="paused";
+       			 bofangf.src="img/switch.png";
+   			 	}    
+			  };
+			window.onscroll = function () {
+				//向上滚动的距离
+				var xTop = document.documentElement.scrollTop || document.body.scrollTop;
+				var scrollTop = xTop;
+
+				if (scrollTop >0) {
+					head.style.position = 'fixed';
+					head.style.left = 0;
+					head.style.top = 0;
+					topd1.style.display = 'block';
+				} else {
+					head.style.position = 'static';
+					topd1.style.display = 'none';
+				}
+			}
+			var vm = new Vue({
+				data:{
+					data:[{
+						src:"img/music.png",
+						name:'音乐',
+						href:"index.html"
+					},{
+						src:"img/radios.png",
+						name:'电台',
+						href:"diantai.html"
+					},{
+						src:"img/plays.png",
+						name:'MV',
+						href:"diantai.html"
+					},{
+						src:"img/icon.png",
+						name:'听歌识曲',
+						href:"diantai.html"
+					},{
+						src:"img/download.png",
+						name:'下载',
+						href:"diantai.html"
+					},{
+						src:"img/user.png",
+						name:'个人中心',
+						href:"login.html"
+					}]
+				},
+			}).$mount('#menu');
+
+		}
+	</script>
+</head>
+<body >
+	<div data-role="page" id="pagebox2">
+		<header data-role="header">
+			<div class="topd" id="head">
+				<div class="btnd xiala"><span></span><span></span><span></span></div>
+				<h3>电台</h3>
+				<a class="chazhaod" href="seek.html"></a>
+				<a class="sandiand"><span></span><span></span><span></span></a>
+			</div>
+			<div class="topd1" id="topd1"></div>
+		</header>
+		<!-- <div class="keshid" id="keshid"> -->
+		<!-- <ul class="diantaixiang" id="diantaixiang">
+			<li><img src="img/diantai1.jpg"></li>
+			<li><img src="img/diantai2.jpg"></li>
+			<li><img src="img/diantai3.jpg"></li>
+			<li><img src="img/diantai4.jpg"></li>
+			<li><img src="img/diantai5.jpg"></li>
+			<li><img src="img/diantai6.jpg"></li>
+			<li><img src="img/diantai7.jpg"></li>
+			<li><img src="img/diantai8.jpg"></li>
+		</ul> -->
+		<main>
+			<div class="diantaixiang">
+				<ul class="diantaixiangl">
+					<li><img src="img/diantai1.jpg"></li>
+					<li><img src="img/diantai3.jpg"></li>
+					<li><img src="img/diantai5.jpg"></li>
+					<li><img src="img/diantai7.jpg"></li>
+					<span class="dibukong"></span>
+				</ul>
+				<ul class="diantaixiangr">
+					<li><img src="img/diantai2.jpg"></li>
+					<li><img src="img/diantai4.jpg"></li>
+					<li><img src="img/diantai6.jpg"></li>
+					<li><img src="img/diantai8.jpg"></li>
+					<span class="dibukong"></span>
+				</ul>
+			</div>
+			<!-- 侧边栏 -->
+			<div id="sideBar">
+				<h1 class="logo_side">
+					<a href="javacript:;">M</a>
+				</h1>
+				<ol id="menu">
+					<li v-for="v in data" :class="$index == 1? 'second':' '&&$index == 2? 'third':' ' &&$index == 3? 'forth':' ' &&$index == 4? 'fifth':' ' &&$index == 5? 'sixth':' '">
+						<img :src='v.src' alt="img">
+						<a href="javascript:;" :href="v.href">{{v.name}}</a>
+					</li>
+				</ol>
+				<div class="settings">
+					<img src="img/setting.png" alt="">
+					<a href="javascript:;" >設置</a>
+				</div>
+			</div>
+		</main>
+		<!-- </div> -->
+		<footer>
+			<div class="play clearfix">
+				<p class="zjt"><img id="zhuanpan" src="img/ganghao.jpg"></p><ul class="geinfo1"><li class="geming1">刚刚好</li><li>薛之谦</li></ul><span class="bofangniu"><img id="bofangf" src="img/switch.png"></span><span class="tianjiag">+</span>
+				<audio id="music1" src="ggh.mp3" loop="loop"></audio>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

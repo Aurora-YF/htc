@@ -1,0 +1,171 @@
+@charset "UTF-8";
+.server_title {
+  width: 17.7rem;
+  height: 0.489rem;
+  background: #f5f6fa;
+  z-index: 1000;
+  overflow: hidden;
+  position: relative; }
+  .server_title .server_con {
+    height: 0.28rem;
+    margin: 0.14rem 0 0.082rem 1.468rem;
+    display: flex; }
+    .server_title .server_con li {
+      height: 100%;
+      margin-right: 0.629rem;
+      position: relative;
+      cursor: pointer; }
+      .server_title .server_con li a {
+        display: line-block;
+        line-height: 0.28rem;
+        font-size: 0.163rem;
+        color: #89909a;
+        position: absolute;
+        right: 0;
+        font-family: "微软雅黑体"; }
+    .server_title .server_con .first {
+      width: 1.072rem; }
+      .server_title .server_con .first img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+    .server_title .server_con .second {
+      width: 1.864rem; }
+      .server_title .server_con .second img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+    .server_title .server_con .third {
+      width: 1.154rem; }
+      .server_title .server_con .third img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+      .server_title .server_con .third a {
+        left: 0.419rem;
+        background: url(../../../dist/xialaicon.png) no-repeat right; }
+    .server_title .server_con .forth {
+      width: 1.119rem; }
+      .server_title .server_con .forth img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+
+.server_banner {
+  width: 17.7rem;
+  height: 2.097rem;
+  background: url(../../../dist/vive-support-banner-search.jpg) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden; }
+  .server_banner .server_contain {
+    width: 10.487rem;
+    margin: 0.839rem auto;
+    z-index: 1000; }
+    .server_banner .server_contain h3 {
+      width: 100%;
+      height: 0.385rem;
+      font-size: 0.256rem;
+      line-height: 0.385rem;
+      text-align: center;
+      font-family: "微软雅黑体"; }
+    .server_banner .server_contain div {
+      width: 100%;
+      position: relative; }
+      .server_banner .server_contain div #search {
+        width: 100%;
+        height: 0.466rem;
+        border: 1px solid #e5e6e8;
+        border-radius: 0.35rem;
+        padding-left: 0.221rem;
+        font-size: 0.186rem; }
+      .server_banner .server_contain div .submit {
+        width: 0.198rem;
+        height: 0.175rem;
+        border: none;
+        background: url(../../../dist/search.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        right: 0.28rem;
+        top: 50%;
+        margin-top: -0.087rem; }
+
+.server_main {
+  width: 14.426rem;
+  margin: 0.897rem 1.923rem 4.708rem 1.41rem; }
+  .server_main .server_zhuti {
+    width: 100%; }
+    .server_main .server_zhuti dt {
+      font-size: 0.245rem;
+      margin-bottom: 0.594rem; }
+    .server_main .server_zhuti dd {
+      width: 3.321rem;
+      float: left;
+      margin-right: 0.373rem; }
+      .server_main .server_zhuti dd h4 {
+        width: 100%;
+        height: 0.431rem;
+        font-size: 0.221rem;
+        border-bottom: 2px solid #000;
+        color: #3c3c3c; }
+      .server_main .server_zhuti dd p {
+        position: relative;
+        margin: 0.443rem auto;
+        height: 0.816rem;
+        cursor: pointer;
+        font-family: "微软雅黑体";
+        border-bottom: 0.012rem solid #e6e8ea; }
+        .server_main .server_zhuti dd p img {
+          position: absolute;
+          top: 0;
+          left: 40%; }
+        .server_main .server_zhuti dd p span {
+          width: 1.608rem;
+          font-size: 0.151rem;
+          color: #89909a;
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          left: 50%;
+          margin-left: -0.804rem; }
+      .server_main .server_zhuti dd p:hover img {
+        color: #00b5e2;
+        opacity: 0.5; }
+      .server_main .server_zhuti dd p:hover span {
+        color: #00b5e2; }
+    .server_main .server_zhuti .last {
+      margin-right: 0; }
+  .server_main .server_article {
+    width: 100%; }
+    .server_main .server_article h4 {
+      font-size: 0.245rem;
+      margin-bottom: 0.163rem;
+      font-family: "微软雅黑体"; }
+    .server_main .server_article ul {
+      width: 4.148rem;
+      margin-right: 3.437rem;
+      height: 2.598rem;
+      float: left; }
+      .server_main .server_article ul li {
+        width: 100%; }
+        .server_main .server_article ul li a {
+          display: block;
+          color: #3c3c3c;
+          font-size: 0.21rem;
+          margin-top: 0.221rem; }
+      .server_main .server_article ul li:hover a {
+        color: #00b5e2; }
+    .server_main .server_article .last {
+      margin-right: 0; }
+  .server_main .server_video {
+    width: 9.205rem;
+    margin-top: 1.608rem; }
+    .server_main .server_video h4 {
+      font-size: 0.245rem;
+      margin-bottom: 0.175rem;
+      font-family: "微软雅黑体"; }
+
+/*# sourceMappingURL=server.css.map */

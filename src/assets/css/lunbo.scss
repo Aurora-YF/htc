@@ -1,0 +1,69 @@
+// 轮播图
+$clientWidth:17.7rem;
+$lunBoHeight: 6.409rem;
+$btnWidth:0.117rem;
+$btnHeigth:0.117rem;
+$btnLeft:0.466rem;
+$btnRight:0.466rem;
+@mixin page($btnLeft,$btnRight){
+	width: 0.419rem;
+	height: 0.419rem;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.21rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 0.419rem;
+	color: #131313;
+	font-size: 0.408rem;
+	z-index: 100;
+	left:$btnLeft;
+	right: $btnRight;
+}
+#lunbo{
+	width:$clientWidth;
+	height: $lunBoHeight;
+	position: relative;
+	overflow: hidden;
+	#pre{
+		@include page($btnLeft,"0");
+	}
+	#next{
+		@include page("0",$btnRight);
+	}
+	.lunbo-bg{
+		height: $lunBoHeight;
+		position: absolute;
+		left: -$clientWidth;
+		li{
+		width: $clientWidth;
+		height: $lunBoHeight;
+		float: left;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.lunbo-btn{
+		width: 100px;
+		display: flex;
+		position: absolute;
+		left: 50%;
+		bottom: 0.245rem;
+		margin-left: -0.583rem;
+		li{
+			width:$btnWidth;
+			height:$btnHeigth;
+			border-radius: 50%;
+			background: #888c90;
+			margin-right: 5px;
+			margin-left: 5px;
+			cursor: pointer;
+		}
+		li.active{
+			background: #71c9eb;
+		} 
+	}
+}

@@ -1,0 +1,175 @@
+html {
+  font-size: 20px; }
+
+#login {
+  width: 16rem;
+  height: 28.444rem;
+  background: url(../img/bg.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden; }
+
+.logo {
+  width: 2.904rem;
+  height: 2.133rem;
+  background: url(../img/logo.png) no-repeat;
+  opacity: 0.54;
+  background-size: 100% 100%;
+  margin: 3.407rem auto; }
+  .logo a {
+    display: block;
+    text-indent: -99999rem;
+    text-decoration: none; }
+
+#user {
+  width: 14.385rem;
+  position: relative;
+  margin: 4.889rem 0.711rem 1.659rem 0.904rem;
+  height: 1.274rem;
+  border-bottom: 1px solid #525d66; }
+  #user #userName {
+    width: 12.834rem;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    left: 1.543rem;
+    box-sizing: border-box;
+    font-size: 0.622rem;
+    padding-bottom: 0.37rem; }
+  #user #person {
+    width: 0.711rem;
+    height: 0.904rem;
+    position: absolute;
+    left: 0;
+    padding-bottom: 0.37rem; }
+  #user #span_text {
+    display: block;
+    padding-left: 2rem;
+    color: #70767b;
+    font-size: 0.622rem;
+    position: absolute;
+    top: 0.0148rem; }
+
+#password {
+  width: 14.563rem;
+  position: relative;
+  margin: 1.659rem 0.711rem 3.23rem 0.815rem;
+  height: 1.2rem;
+  border-bottom: 1px solid #525d66; }
+  #password #passName {
+    width: 12.834rem;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    left: 1.543rem;
+    box-sizing: border-box;
+    font-size: 0.622rem;
+    padding-bottom: 0.415rem; }
+  #password #pass {
+    width: 0.844rem;
+    height: 0.77rem;
+    position: absolute;
+    left: 0;
+    padding-bottom: 0.415rem; }
+  #password #span_pass {
+    display: block;
+    padding-left: 2rem;
+    color: #70767b;
+    font-size: 0.622rem;
+    position: absolute;
+    top: 0.0074rem; }
+  #password #eye {
+    width: 0.978rem;
+    height: 0.563rem;
+    background: url(../img/eye.png) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+#login_btn {
+  display: block;
+  width: 11.733rem;
+  height: 2.163rem;
+  background: #fff;
+  text-align: center;
+  line-height: 2.163rem;
+  margin: 0 auto;
+  border-radius: 1.081rem;
+  color: #010101;
+  font-size: 0.83rem;
+  text-decoration: none; }
+
+#reg-for {
+  width: 16rem;
+  margin-top: 1.822rem;
+  display: flex;
+  justify-content: center; }
+  #reg-for #register {
+    width: 7.985rem;
+    height: 1.807rem;
+    border-right: 0.015rem solid #5a636c;
+    box-sizing: content-box; }
+    #reg-for #register a {
+      display: block;
+      width: 3.541rem;
+      height: 1.378rem;
+      border: 0.015rem solid #555e66;
+      border-radius: 0.689rem;
+      margin: 0.207rem 0.667rem 0.207rem 3.778rem;
+      text-decoration: none;
+      color: #73787d;
+      text-align: center;
+      line-height: 1.378rem;
+      font-size: 0.533rem; }
+  #reg-for #forgetPass {
+    width: 7.985rem;
+    height: 1.807rem;
+    border-right: "0";
+    box-sizing: content-box; }
+    #reg-for #forgetPass a {
+      display: block;
+      width: 3.541rem;
+      height: 1.378rem;
+      border: 0.015rem solid #555e66;
+      border-radius: 0.689rem;
+      margin: 0.207rem 3.778rem 0.207rem 0.667rem;
+      text-decoration: none;
+      color: #73787d;
+      text-align: center;
+      line-height: 1.378rem;
+      font-size: 0.533rem; }
+
+#link {
+  width: 8.874rem;
+  height: 0.963rem;
+  margin: 1.719rem auto;
+  display: flex;
+  justify-content: space-between; }
+  #link li .first {
+    width: 0.844rem;
+    height: 0.963rem;
+    display: block;
+    background: url(../img/qq.png) no-repeat;
+    background-size: 100% 100%; }
+  #link li .second {
+    width: 1.037rem;
+    height: 0.904rem;
+    display: block;
+    background: url(../img/weixin.png) no-repeat;
+    background-size: 100% 100%; }
+  #link li .third {
+    width: 1.052rem;
+    height: 0.83rem;
+    display: block;
+    background: url(../img/weibo.png) no-repeat;
+    background-size: 100% 100%; }
+
+/*# sourceMappingURL=login.css.map */

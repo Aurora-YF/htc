@@ -1,0 +1,1694 @@
+@charset "UTF-8";
+#lunbo {
+  width: 17.7rem;
+  height: 6.409rem;
+  position: relative;
+  overflow: hidden; }
+  #lunbo #pre {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: 0.466rem;
+    right: "0"; }
+  #lunbo #next {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: "0";
+    right: 0.466rem; }
+  #lunbo .lunbo-bg {
+    height: 6.409rem;
+    position: absolute;
+    left: -17.7rem; }
+    #lunbo .lunbo-bg li {
+      width: 17.7rem;
+      height: 6.409rem;
+      float: left; }
+      #lunbo .lunbo-bg li img {
+        width: 100%;
+        height: 100%; }
+  #lunbo .lunbo-btn {
+    width: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0.245rem;
+    margin-left: -0.583rem; }
+    #lunbo .lunbo-btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      border-radius: 50%;
+      background: #888c90;
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer; }
+    #lunbo .lunbo-btn li.active {
+      background: #71c9eb; }
+
+@keyframes banner {
+  0% {
+    transform: scale(1.5, 1.5); }
+  20% {
+    transform: scale(1.5, 1.5); }
+  50% {
+    border-radius: 50%;
+    transform: translate(-20px, -270px);
+    transform: scale(2, 2); }
+  55% {
+    border-radius: 50%;
+    transform-origin: center;
+    transform: translate(0px, -270px);
+    transform: scale(2, 2); }
+  65% {
+    border-radius: 50%;
+    transform: scale(2, 2); }
+  75% {
+    border-radius: 50%;
+    transform: scale(2, 2);
+    z-index: 1000; }
+  85% {
+    border-radius: 50%;
+    transform: scale(2, 2); }
+  95% {
+    border-radius: 50%; }
+  100% {
+    border-radius: 50%; } }
+#banner-box {
+  width: 17.7rem;
+  display: flex; }
+  #banner-box div {
+    width: 4.428rem;
+    height: 5.5rem;
+    border-left: 0.047rem solid #fff;
+    border-bottom: 0.058rem solid #fff;
+    border-top: 0.07rem solid #fff;
+    cursor: pointer;
+    position: relative; }
+    #banner-box div img {
+      width: 100%;
+      height: 100%; }
+    #banner-box div .box-text {
+      position: absolute;
+      color: #3c3c3c;
+      font-size: 0.198rem;
+      margin: 0 0.21rem;
+      width: 4.009rem;
+      height: 0.932rem;
+      text-align: center;
+      line-height: 0.932rem;
+      border: none; }
+      #banner-box div .box-text b {
+        font-weight: 800; }
+      #banner-box div .box-text .last {
+        color: #fff; }
+      #banner-box div .box-text .text-last {
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.198rem;
+        letter-spacing: 0.1em;
+        width: 3.927rem;
+        height: 0.326rem;
+        line-height: 0.326rem;
+        text-align: center;
+        top: 0.571rem;
+        left: 0; }
+  #banner-box .last div {
+    width: 4.428rem;
+    height: 2.715rem;
+    border-bottom: 0.047rem solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: 0.047rem solid #fff; }
+    #banner-box .last div .box-text {
+      position: absolute;
+      color: #3c3c3c;
+      font-size: 0.198rem;
+      margin: 0 0.21rem;
+      width: 4.009rem;
+      height: 0.932rem;
+      text-align: center;
+      line-height: 0.932rem;
+      border: none; }
+      #banner-box .last div .box-text b {
+        font-weight: 800; }
+      #banner-box .last div .box-text .last {
+        color: #fff; }
+    #banner-box .last div img {
+      width: 100%;
+      height: 100%; }
+  #banner-box img:hover {
+    animation: 2s banner ease forwards;
+    z-index: 1000000;
+    position: absolute; }
+
+.video {
+  width: 17.7rem;
+  height: 5.069rem; }
+  .video video {
+    width: 100%;
+    height: auto;
+    position: relative; }
+
+#lunbo {
+  width: 17.7rem;
+  height: 6.409rem;
+  position: relative;
+  overflow: hidden; }
+  #lunbo #pre {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: 0.466rem;
+    right: "0"; }
+  #lunbo #next {
+    width: 0.419rem;
+    height: 0.419rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.21rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 0.419rem;
+    color: #131313;
+    font-size: 0.408rem;
+    z-index: 100;
+    left: "0";
+    right: 0.466rem; }
+  #lunbo .lunbo-bg {
+    height: 6.409rem;
+    position: absolute;
+    left: -17.7rem; }
+    #lunbo .lunbo-bg li {
+      width: 17.7rem;
+      height: 6.409rem;
+      float: left; }
+      #lunbo .lunbo-bg li img {
+        width: 100%;
+        height: 100%; }
+  #lunbo .lunbo-btn {
+    width: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0.245rem;
+    margin-left: -0.583rem; }
+    #lunbo .lunbo-btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      border-radius: 50%;
+      background: #888c90;
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer; }
+    #lunbo .lunbo-btn li.active {
+      background: #71c9eb; }
+
+.figurePhoto {
+  width: 17.7rem; }
+  .figurePhoto span {
+    display: block;
+    width: 17.7rem;
+    height: 2.33rem;
+    background: #fff; }
+  .figurePhoto .title {
+    width: 10.114rem;
+    margin: 3.496rem 0 0 3.869rem;
+    overflow: hidden; }
+    .figurePhoto .title h3 {
+      width: 10.114rem;
+      text-align: center;
+      font-size: 0.408rem;
+      font-weight: 800;
+      font-family: "微软雅黑体";
+      margin-bottom: 0.385rem; }
+      .figurePhoto .title h3 b {
+        width: 133px;
+        font-size: 0.408rem;
+        font-weight: 400; }
+    .figurePhoto .title p {
+      width: 10.114rem;
+      font-size: 0.204rem;
+      text-align: center;
+      font-family: "微软雅黑体";
+      font-weight: 400;
+      margin-bottom: 0.524rem; }
+  .figurePhoto #figure {
+    width: 17.7rem;
+    height: 6.118rem;
+    position: relative; }
+    .figurePhoto #figure .figure_box {
+      width: 14.158rem;
+      height: 5.442rem;
+      margin: 0 1.771rem 0.466rem 1.771rem;
+      overflow: hidden;
+      position: relative; }
+      .figurePhoto #figure .figure_box .figure_png {
+        height: 5.442rem;
+        position: absolute;
+        display: flex;
+        left: -14.158rem;
+        cursor: pointer; }
+        .figurePhoto #figure .figure_box .figure_png li {
+          width: 14.158rem;
+          height: 5.442rem; }
+          .figurePhoto #figure .figure_box .figure_png li img {
+            width: 100%;
+            height: 100%; }
+    .figurePhoto #figure .figure_btn {
+      display: flex;
+      position: absolute;
+      bottom: 0.338rem;
+      left: 50%;
+      margin-left: -0.35rem; }
+      .figurePhoto #figure .figure_btn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        margin: 0 0.058rem;
+        border-radius: 50%;
+        background: #888c90;
+        cursor: pointer; }
+      .figurePhoto #figure .figure_btn li.active {
+        background: #70cdf0; }
+    .figurePhoto #figure #page_pre {
+      width: 0.419rem;
+      height: 0.419rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.21rem;
+      text-decoration: none;
+      text-align: center;
+      line-height: 0.419rem;
+      color: #131313;
+      font-size: 0.408rem;
+      z-index: 100;
+      left: 0.408rem;
+      right: "0"; }
+    .figurePhoto #figure #page_next {
+      width: 0.419rem;
+      height: 0.419rem;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.21rem;
+      text-decoration: none;
+      text-align: center;
+      line-height: 0.419rem;
+      color: #131313;
+      font-size: 0.408rem;
+      z-index: 100;
+      left: "0";
+      right: 0.408rem; }
+  .figurePhoto .news {
+    width: 14.228rem;
+    margin: 0.466rem 1.748rem 1.177rem 1.748rem;
+    display: flex; }
+    .figurePhoto .news .first {
+      width: 3.997rem;
+      height: 5.884rem;
+      margin-right: 0.035rem; }
+      .figurePhoto .news .first h5 {
+        width: 2.191rem;
+        font-size: 0.326rem;
+        letter-spacing: 0.02rem;
+        color: #3c3c3c;
+        padding-left: 0.023rem; }
+      .figurePhoto .news .first h4 {
+        width: 1.573rem;
+        font-size: 0.373rem;
+        color: #3c3c3c;
+        font-weight: 800; }
+      .figurePhoto .news .first div {
+        width: 3.997rem;
+        height: 4.894rem;
+        margin-top: 0.233rem; }
+        .figurePhoto .news .first div img {
+          width: 100%;
+          height: 100%; }
+    .figurePhoto .news .second {
+      width: 6.164rem;
+      height: 5.884rem;
+      margin-right: 0.047rem; }
+      .figurePhoto .news .second .top {
+        width: 6.164rem;
+        height: 3.822rem;
+        margin-bottom: 0.035rem; }
+        .figurePhoto .news .second .top img {
+          width: 100%;
+          height: 100%; }
+      .figurePhoto .news .second .bottom {
+        width: 6.164rem;
+        height: 2.028rem; }
+        .figurePhoto .news .second .bottom img {
+          width: 100%;
+          height: 100%; }
+    .figurePhoto .news .third {
+      width: 3.985rem;
+      height: 5.884rem; }
+      .figurePhoto .news .third img {
+        width: 100%;
+        height: 100%; }
+
+.title {
+  width: 17.7rem;
+  position: relative; }
+  .title h6 {
+    width: 4.719rem;
+    font-size: 0.385rem;
+    font-family: "微软雅黑体";
+    position: absolute;
+    text-align: center;
+    color: #3c3c3c;
+    left: 50%;
+    margin-left: -2.354rem;
+    top: 0; }
+    .title h6 span {
+      font-weight: 700; }
+
+.about {
+  height: 1.235rem; }
+
+.mask {
+  width: 17.7rem;
+  background: url(../../../dist/mask.png);
+  background-size: 100%;
+  position: static;
+  z-index: 100000; }
+  .mask .banner {
+    width: 17.7rem;
+    height: 6.036rem;
+    cursor: pointer; }
+    .mask .banner img {
+      width: 100%; }
+  .mask .thumb {
+    background: #000; }
+    .mask .thumb .thumbnail {
+      width: 13.983rem;
+      margin: 0 1.864rem;
+      display: flex;
+      border: none;
+      padding: none; }
+      .mask .thumb .thumbnail li {
+        width: 2.7966rem;
+        height: 1.515rem;
+        cursor: pointer; }
+        .mask .thumb .thumbnail li img {
+          width: 100%;
+          height: 100%;
+          opacity: 0.9; }
+    .mask .thumb .viveport-bg {
+      width: 17.7rem;
+      height: 1.492rem;
+      position: relative; }
+      .mask .thumb .viveport-bg img {
+        width: 100%;
+        height: 100%; }
+      .mask .thumb .viveport-bg a {
+        display: block;
+        position: absolute;
+        width: 1.829rem;
+        height: 0.466rem;
+        text-align: center;
+        line-height: 0.466rem;
+        color: #fff;
+        font-size: 0.186rem;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.9145rem;
+        text-decoration: none;
+        background: #00b5e2;
+        border-radius: 0.233rem; }
+      .mask .thumb .viveport-bg a:hover {
+        color: #000; }
+
+.video-two {
+  width: 17.7rem;
+  height: 7.551rem;
+  position: relative; }
+  .video-two video {
+    width: 100%;
+    height: 7.551rem;
+    position: relative; }
+  .video-two a {
+    display: block;
+    position: absolute;
+    width: 1.725rem;
+    height: 0.513rem;
+    text-align: center;
+    line-height: 0.513rem;
+    color: #fff;
+    font-size: 0.186rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.8625rem;
+    text-decoration: none;
+    background: #00b5e2;
+    border-radius: 0.233rem;
+    z-index: 1000;
+    margin-top: 1.282rem; }
+    .video-two a .icon-play {
+      display: line-block;
+      width: 0.093rem;
+      height: 0.151rem;
+      background: url(../../../dist/play.png) no-repeat -11px -2px;
+      position: absolute;
+      left: 0.28rem;
+      top: 0.198rem; }
+  .video-two a:hover {
+    color: #000; }
+
+.map {
+  width: 17.7rem;
+  background: url(../../../dist/map.jpg) no-repeat;
+  background-size: 100%; }
+  .map h3 {
+    width: 1.585rem;
+    color: #e9eaeb;
+    margin: 0.909rem 8.052rem 0.373rem 8.052rem;
+    font-size: 0.396rem; }
+  .map p {
+    width: 856px;
+    margin: 0 3.869rem 0.769rem 3.869rem;
+    font-size: 0.221rem;
+    text-align: center;
+    color: #e9eaeb; }
+  .map .left {
+    width: 1.678rem;
+    height: 0.501rem;
+    background: #00b5e2;
+    margin-left: 7.05rem;
+    margin-right: "0";
+    margin-bottom: 0.99rem;
+    border-radius: 0.233rem;
+    float: left;
+    text-align: center;
+    line-height: 0.501rem;
+    font-size: 0.186rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.128rem; }
+  .map .right {
+    width: 1.678rem;
+    height: 0.501rem;
+    background: #00b5e2;
+    margin-left: "0";
+    margin-right: 7.038rem;
+    margin-bottom: 0.99rem;
+    border-radius: 0.233rem;
+    float: left;
+    text-align: center;
+    line-height: 0.501rem;
+    font-size: 0.186rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.128rem; }
+  .map a:hover {
+    background: #00cfe2;
+    color: #000; }
+
+.register {
+  width: 17.7rem;
+  background: #00b5e2;
+  overflow: hidden; }
+  .register .con {
+    position: relative;
+    width: 8.331rem;
+    height: 1.049rem;
+    margin: 1.13rem 1.037rem 1.55rem 2.82rem; }
+    .register .con .news {
+      width: 3.344rem;
+      color: #fff;
+      font-size: 0.35rem;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .register .con input {
+      width: 3.484rem;
+      height: 0.454rem;
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 4.847rem;
+      font-size: 0.186rem; }
+    .register .con input::-webkit-input-placeholder {
+      color: #89ddf2; }
+    .register .con #mail {
+      width: 3.484rem;
+      height: 0.303rem;
+      position: absolute;
+      top: 0.629rem;
+      left: 4.847rem; }
+      .register .con #mail .dropdown-toggle {
+        width: 0.186rem;
+        height: 0.28rem;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        background-color: #eee;
+        border: none;
+        cursor: pointer; }
+      .register .con #mail .btn-defalut {
+        width: 3.263rem;
+        height: 0.28rem;
+        padding: 0;
+        text-align: left;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 0.151rem; }
+      .register .con #mail .dropdown-menu {
+        width: 3.263rem; }
+  .register .register-btn {
+    display: block;
+    width: 2.028rem;
+    height: 0.443rem;
+    border-radius: 0.233rem;
+    background: #fff;
+    text-align: center;
+    line-height: 0.443rem;
+    border: 1px solid #3ad5fb;
+    margin-left: 1.561rem;
+    margin-top: 1.748rem;
+    color: #00b5e2;
+    font-size: 0.175rem;
+    text-decoration: none; }
+
+.partner {
+  width: 17.7rem;
+  overflow: hidden; }
+  .partner .partner-content {
+    width: 12.072rem;
+    height: 3.461rem;
+    margin: 1.34rem auto 1.305rem; }
+    .partner .partner-content h4 {
+      width: 5.407rem;
+      margin: 0 auto;
+      font-size: 0.361rem;
+      font-family: "微软雅黑体"; }
+      .partner .partner-content h4 span {
+        font-weight: 900; }
+    .partner .partner-content p {
+      width: 12.072rem;
+      margin: 0.408rem 0 1.224rem;
+      height: 0.559rem;
+      line-height: 0.559rem;
+      text-align: center;
+      font-size: 0.21rem; }
+    .partner .partner-content ul {
+      width: 12.072rem;
+      display: flex;
+      justify-content: space-between; }
+      .partner .partner-content ul li {
+        width: 1.561rem;
+        height: 0.524rem;
+        cursor: pointer; }
+        .partner .partner-content ul li img {
+          width: 100%;
+          height: 100%; }
+
+.show {
+  width: 17.7rem;
+  overflow: hidden;
+  background: #0074cb;
+  z-index: 1000; }
+  .show div {
+    width: 1.165rem;
+    height: 0.315rem;
+    color: #fff;
+    font-size: 0.268rem;
+    line-height: 0.315rem;
+    font-family: "微软雅黑体";
+    margin: 0.221rem 0.233rem 0.28rem 1.387rem; }
+  .show ul {
+    width: 1.165rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.256rem; }
+    .show ul li a {
+      display: block;
+      width: 0.245rem;
+      height: 0.245rem; }
+
+.index_bottom {
+  width: 17.7rem;
+  height: 5.826rem;
+  background: #111820;
+  z-index: 1000; }
+  .index_bottom .bottom_left {
+    width: 9.345rem;
+    height: 5.826rem;
+    position: relative; }
+    .index_bottom .bottom_left .list {
+      width: 7.959rem;
+      height: 3.589rem;
+      margin: 0.571rem 0 0 1.398rem; }
+      .index_bottom .bottom_left .list dl {
+        width: 1.993rem;
+        margin-right: 0.99rem;
+        float: left; }
+        .index_bottom .bottom_left .list dl dt {
+          width: 1.993rem;
+          font-size: 0.151rem;
+          color: #fff;
+          margin-bottom: 0.21rem; }
+        .index_bottom .bottom_left .list dl dd a {
+          display: block;
+          width: 1.993rem;
+          text-decoration: none;
+          color: #aaaaaf;
+          margin-top: 0.21rem;
+          font-size: 0.151rem; }
+      .index_bottom .bottom_left .list .last {
+        margin-right: 0; }
+    .index_bottom .bottom_left .conpony {
+      width: 3.146rem;
+      left: 1.398rem;
+      bottom: 0.769rem;
+      color: #666;
+      font-size: 0.14rem;
+      position: absolute; }
+    .index_bottom .bottom_left .bot_title {
+      width: 1.585rem;
+      font-size: 0.163rem;
+      color: #666;
+      position: absolute;
+      bottom: 0.175rem;
+      left: 1.398rem; }
+
+.vr_title {
+  width: 17.7rem;
+  height: 0.583rem;
+  background: #3c3c3c;
+  z-index: 1000;
+  position: relative; }
+  .vr_title .vr_con {
+    width: 12.095rem;
+    height: 100%;
+    margin-left: 1.573rem; }
+    .vr_title .vr_con li {
+      height: 100%;
+      float: left;
+      margin-right: 0.816rem;
+      display: flex; }
+      .vr_title .vr_con li a {
+        display: block;
+        text-align: center;
+        line-height: 0.583rem;
+        color: #fff;
+        font-size: 0.163rem;
+        font-family: "微软雅黑体"; }
+      .vr_title .vr_con li a:hover {
+        text-decoration: none;
+        border-bottom: 0.058rem solid #00b5e2; }
+  .vr_title .title_buy {
+    width: 1.41rem;
+    height: 0.583rem;
+    position: fixed;
+    background: #41464d;
+    right: 1.037rem;
+    top: 70px; }
+    .vr_title .title_buy a {
+      display: block;
+      width: 0.21rem;
+      float: left;
+      height: 0.175rem;
+      background: url(../../../dist/vr_buy.png) no-repeat;
+      background-size: 100% 100%;
+      margin: 0.21rem 0 0 0.35rem; }
+    .vr_title .title_buy div {
+      float: right;
+      width: 0.326rem;
+      height: 0.326rem;
+      background: #00b5e2;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+      margin-top: 0.128rem;
+      text-align: center;
+      line-height: 0.326rem;
+      color: #fff; }
+
+.vr_video {
+  width: 17.7rem;
+  height: 5.64rem;
+  position: relative;
+  z-index: 1; }
+  .vr_video video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .vr_video .video_con {
+    width: 8.867rem;
+    margin: 1.457rem auto;
+    z-index: 1000;
+    position: relative; }
+    .vr_video .video_con h3 {
+      width: 4.451rem;
+      font-size: 0.361rem;
+      height: 0.385rem;
+      margin: 0 auto;
+      color: #e9eaeb;
+      font-weight: bolder; }
+      .vr_video .video_con h3 span {
+        font-family: "微软雅黑体"; }
+    .vr_video .video_con p {
+      width: 8.867rem;
+      height: 0.862rem;
+      margin-top: 0.408rem;
+      text-align: center;
+      font-size: 0.204rem;
+      color: #e9eaeb;
+      font-weight: 600; }
+    .vr_video .video_con .video_btn {
+      width: 3.554rem;
+      margin: 0.396rem auto; }
+      .vr_video .video_con .video_btn .vr_test {
+        display: inline-block;
+        width: 1.76rem;
+        height: 0.466rem;
+        background: #00b5e2;
+        text-align: center;
+        line-height: 0.466rem;
+        font-size: 0.175rem;
+        border-radius: 0.699rem;
+        margin-right: 0.175rem;
+        color: #fff; }
+      .vr_video .video_con .video_btn .vr_dingGou {
+        display: inline-block;
+        width: 1.526rem;
+        height: 0.466rem;
+        background: #00b5e2;
+        text-align: center;
+        line-height: 0.466rem;
+        font-size: 0.175rem;
+        border-radius: 0.699rem;
+        margin-right: 0;
+        color: #fff; }
+      .vr_video .video_con .video_btn a:hover {
+        color: #000;
+        text-decoration: none; }
+
+.vr_swiper {
+  width: 17.7rem; }
+  .vr_swiper .vr_middle {
+    width: 14.915rem;
+    margin: 1.363rem auto 0.687rem; }
+    .vr_swiper .vr_middle .header {
+      width: 10.429rem; }
+      .vr_swiper .vr_middle .header span {
+        font-size: 0.385rem;
+        color: #3c3c3c;
+        font-family: "微软雅黑体"; }
+      .vr_swiper .vr_middle .header .bold {
+        font-weight: 900; }
+      .vr_swiper .vr_middle .header p {
+        height: 0.524rem;
+        font-size: 0.186rem;
+        margin-top: 0.385rem;
+        font-family: "微软雅黑体";
+        color: #3c3c3c; }
+  .vr_swiper .vr_lunbo {
+    width: 17.7rem;
+    height: 11.28rem;
+    position: relative; }
+    .vr_swiper .vr_lunbo .lunbo_img {
+      width: 14.915rem;
+      height: 9.87rem;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden; }
+      .vr_swiper .vr_lunbo .lunbo_img div {
+        height: 100%;
+        position: absolute;
+        left: -14.915rem; }
+        .vr_swiper .vr_lunbo .lunbo_img div ul {
+          width: 14.915rem;
+          height: 100%;
+          position: absolute; }
+          .vr_swiper .vr_lunbo .lunbo_img div ul li {
+            width: 7.388rem;
+            height: 100%;
+            float: left;
+            position: absolute;
+            left: 0; }
+            .vr_swiper .vr_lunbo .lunbo_img div ul li img {
+              width: 100%;
+              height: 100%; }
+          .vr_swiper .vr_lunbo .lunbo_img div ul .two {
+            left: 7.527rem; }
+    .vr_swiper .vr_lunbo .pre {
+      width: 0.28rem;
+      height: 0.28rem;
+      transform: rotate(-45deg);
+      color: #000;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.14rem;
+      font-size: 0.408rem;
+      left: 0.804rem;
+      right: "0";
+      font-weight: bolder;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000; }
+    .vr_swiper .vr_lunbo .next {
+      width: 0.28rem;
+      height: 0.28rem;
+      transform: rotate(-225deg);
+      color: #000;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.14rem;
+      font-size: 0.408rem;
+      left: "0";
+      right: 0.804rem;
+      font-weight: bolder;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000; }
+    .vr_swiper .vr_lunbo .Btn {
+      width: 1.282rem;
+      height: 0.117rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      margin-left: -0.641rem;
+      bottom: 1.037rem;
+      cursor: pointer; }
+      .vr_swiper .vr_lunbo .Btn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        background: #888c90;
+        border-radius: 50%; }
+      .vr_swiper .vr_lunbo .Btn .active {
+        background: #70cdf0; }
+    .vr_swiper .vr_lunbo .lastBtn {
+      width: 0.35rem;
+      height: 0.117rem;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      margin-left: -0.175rem;
+      bottom: 1.037rem;
+      cursor: pointer; }
+      .vr_swiper .vr_lunbo .lastBtn li {
+        width: 0.117rem;
+        height: 0.117rem;
+        background: #888c90;
+        border-radius: 50%; }
+      .vr_swiper .vr_lunbo .lastBtn .active {
+        background: #70cdf0; }
+
+.photo {
+  width: 17.7rem;
+  position: relative; }
+  .photo .top {
+    height: 3.531rem;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .photo .top .first {
+      width: auto;
+      height: 3.531rem;
+      z-index: 1; }
+    .photo .top .second {
+      width: 7.085rem;
+      height: 3.531rem;
+      z-index: 100;
+      left: 3.542rem; }
+    .photo .top .third {
+      width: 7.073rem;
+      height: 3.531rem;
+      position: absolute;
+      right: 0; }
+    .photo .top li {
+      position: absolute; }
+      .photo .top li img {
+        width: 100%;
+        height: 3.531rem; }
+  .photo .bottom {
+    height: 3.531rem;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .photo .bottom .first {
+      width: 7.073rem;
+      height: 3.531rem;
+      position: absolute; }
+    .photo .bottom .second {
+      width: 7.085rem;
+      height: 3.531rem;
+      z-index: 100;
+      left: 7.073rem; }
+    .photo .bottom .third {
+      width: auto;
+      height: 3.531rem;
+      z-index: 1;
+      right: 0; }
+    .photo .bottom li {
+      position: absolute; }
+      .photo .bottom li img {
+        width: 100%;
+        height: 3.531rem; }
+
+.vr_banner {
+  width: 17.7rem;
+  height: 6.444rem;
+  position: relative; }
+  .vr_banner .pre {
+    z-index: 1000;
+    width: 0.28rem;
+    height: 0.28rem;
+    transform: rotate(-45deg);
+    color: #000;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.14rem;
+    font-size: 0.408rem;
+    left: 0.804rem;
+    right: "0";
+    font-weight: bolder;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000; }
+  .vr_banner .next {
+    z-index: 1000;
+    width: 0.28rem;
+    height: 0.28rem;
+    transform: rotate(-225deg);
+    color: #000;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.14rem;
+    font-size: 0.408rem;
+    left: "0";
+    right: 0.804rem;
+    font-weight: bolder;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000; }
+  .vr_banner .btn {
+    width: 0.583rem;
+    height: 0.117rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.291rem;
+    bottom: 1.037rem;
+    cursor: pointer;
+    bottom: 0.245rem; }
+    .vr_banner .btn li {
+      width: 0.117rem;
+      height: 0.117rem;
+      background: #888c90;
+      border-radius: 50%; }
+    .vr_banner .btn .active {
+      background: #70cdf0; }
+  .vr_banner ul {
+    height: 6.444rem;
+    position: absolute; }
+    .vr_banner ul li {
+      height: 100%; }
+      .vr_banner ul li img {
+        width: 100%;
+        height: 100%; }
+
+html {
+  font-size: 20px;
+  font-family: '微软雅黑體'; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  width: 17.7rem; }
+
+.Htab {
+  width: 17.7rem;
+  height: 0.583rem;
+  background: #41464d; }
+  .Htab ul {
+    margin-left: 1.608rem; }
+    .Htab ul li {
+      font-size: 0.14rem;
+      color: white;
+      height: 0.536rem;
+      line-height: 0.536rem;
+      float: left;
+      margin-right: 0.419rem; }
+    .Htab ul li.active {
+      border-bottom: 0.047rem solid #00b5e2; }
+    .Htab ul .VR-item {
+      position: relative; }
+      .Htab ul .VR-item .VR-item1 {
+        display: none;
+        background: #61666b;
+        opacity: 0.8;
+        margin-top: 0.047rem;
+        position: absolute; }
+        .Htab ul .VR-item .VR-item1 span {
+          width: 0.979rem;
+          margin-left: 0.117rem;
+          color: #b0b2b5;
+          font-size: 0.175rem;
+          height: 0.583rem;
+          line-height: 0.583rem;
+          display: block;
+          cursor: pointer; }
+        .Htab ul .VR-item .VR-item1 span:hover {
+          color: white; }
+
+.Banner {
+  width: 100%;
+  height: 4.428rem;
+  background: url(../../../dist/banner-developer-portal.jpg);
+  background-size: 100%; }
+  .Banner .jieshao {
+    margin-left: 1.655rem;
+    margin-top: 0.967rem;
+    font-size: 0.315rem; }
+    .Banner .jieshao strong {
+      display: block;
+      font-weight: bolder; }
+    .Banner .jieshao h2 {
+      margin-top: 0.385rem;
+      width: 5.313rem;
+      font-size: 0.198rem; }
+    .Banner .jieshao .CW {
+      margin-top: 0.35rem; }
+      .Banner .jieshao .CW .aBtn {
+        margin-right: 0.419rem;
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.655rem;
+        height: 0.466rem;
+        line-height: 0.466rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Banner .jieshao .CW .aBtn:hover {
+        color: black;
+        background: #00c9fb; }
+      .Banner .jieshao .CW span {
+        font-size: 0.186rem; }
+        .Banner .jieshao .CW span a {
+          color: #00b9e6; }
+
+.Vport {
+  background: #e0e0e0;
+  padding: 1.037rem 1.748rem 1.573rem 1.608rem; }
+  .Vport .Vport-left {
+    width: 7.621rem;
+    margin-top: 0.792rem;
+    margin-right: 1.492rem; }
+    .Vport .Vport-left .Vport-logo {
+      width: 4.684rem;
+      height: 0.699rem;
+      margin-left: -0.59rem;
+      margin-bottom: 0.117rem;
+      background: url(../../../dist/viveport-premier.png);
+      background-size: 100%; }
+    .Vport .Vport-left .Vport-content .Vport-content1 {
+      margin-top: 0.431rem; }
+      .Vport .Vport-left .Vport-content .Vport-content1 .sto {
+        margin-bottom: 0.21rem;
+        font-size: 0.256rem;
+        font-weight: bolder; }
+      .Vport .Vport-left .Vport-content .Vport-content1 .sto1 {
+        font-size: 0.186rem; }
+    .Vport .Vport-left .Vport-btn {
+      width: 100%;
+      height: 1.725rem;
+      background: #d7d7d7;
+      margin-top: 0.629rem; }
+      .Vport .Vport-left .Vport-btn h1 {
+        font-size: 0.256rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.408rem; }
+      .Vport .Vport-left .Vport-btn .Xbtn {
+        margin-left: 2.82rem;
+        margin-top: 0.291rem;
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.981rem;
+        height: 0.443rem;
+        line-height: 0.443rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Vport .Vport-left .Vport-btn .Xbtn:hover {
+        color: black;
+        background: #00c9fb; }
+    .Vport .Vport-left .Vport-btn1 {
+      margin-top: 0.117rem; }
+      .Vport .Vport-left .Vport-btn1 .Vport-btna {
+        width: 1.981rem;
+        height: 1.666rem;
+        padding: 0.385rem 0.233rem 0.35rem 0.233rem;
+        background: #d7d7d7;
+        margin-right: 0.14rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 0.163rem;
+          height: 1.025rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna .Hbtn {
+          float: left;
+          font-size: 0.186rem;
+          color: white;
+          background: #00b5e2;
+          width: 1.981rem;
+          height: 0.443rem;
+          line-height: 0.443rem;
+          text-align: center;
+          border-radius: 0.233rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna .Hbtn:hover {
+          color: black;
+          background: #00c9fb; }
+      .Vport .Vport-left .Vport-btn1 .Vport-btnas {
+        margin: 0; }
+    .Vport .Vport-left .V-vid {
+      width: 8.949rem;
+      height: 5.745rem;
+      margin-top: 2.097rem;
+      position: relative; }
+      .Vport .Vport-left .V-vid .V-vid-btn {
+        position: absolute;
+        width: 1.189rem;
+        height: 0.816rem;
+        border-radius: 20px;
+        background: #17181a;
+        opacity: 0.9;
+        z-index: 20;
+        left: 50%;
+        top: 50%;
+        margin-left: -0.594rem;
+        margin-top: -0.408rem; }
+        .Vport .Vport-left .V-vid .V-vid-btn img {
+          width: 29px;
+          height: 29px;
+          margin-left: 0.466rem;
+          margin-top: 0.233rem; }
+      .Vport .Vport-left .V-vid .V-video {
+        width: 100%;
+        height: 100%; }
+    .Vport .Vport-left .V-web {
+      margin-top: 0.501rem; }
+      .Vport .Vport-left .V-web h1 {
+        font-size: 28px;
+        font-weight: bold; }
+      .Vport .Vport-left .V-web p {
+        font-size: 0.186rem;
+        margin-top: 0.35rem;
+        margin-bottom: 0.291rem; }
+      .Vport .Vport-left .V-web .Web-btn {
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.107rem;
+        height: 0.466rem;
+        line-height: 0.466rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Vport .Vport-left .V-web a:hover {
+        color: black;
+        background: #00c9fb; }
+  .Vport .Vport-right .Vport-right-R {
+    margin-bottom: 0.385rem; }
+    .Vport .Vport-right .Vport-right-R h1 {
+      font-size: 0.233rem;
+      font-weight: bold; }
+  .Vport .Vport-right .Vport-right-Htc p {
+    width: 4.346rem;
+    line-height: 0.3905rem;
+    font-size: 0.21rem;
+    font-weight: lighter; }
+  .Vport .Vport-right .Vport-right-re {
+    margin-top: 0.385rem; }
+    .Vport .Vport-right .Vport-right-re h1 {
+      color: #3c3c3c;
+      font-size: 0.245rem;
+      font-weight: bolder; }
+    .Vport .Vport-right .Vport-right-re li {
+      margin-top: 0.256rem; }
+      .Vport .Vport-right .Vport-right-re li a {
+        color: #00b5e2; }
+      .Vport .Vport-right .Vport-right-re li a:hover {
+        color: #00c9fb; }
+  .Vport .Vport-right .Vport-right-K {
+    margin-top: 0.676rem; }
+    .Vport .Vport-right .Vport-right-K h1 {
+      font-size: 0.233rem;
+      font-weight: bold; }
+    .Vport .Vport-right .Vport-right-K ul li {
+      font-size: 0.186rem;
+      color: #3c3c3c; }
+      .Vport .Vport-right .Vport-right-K ul li h2 {
+        margin-top: 0.419rem; }
+      .Vport .Vport-right .Vport-right-K ul li h2.sk {
+        color: #00b5e2;
+        margin-top: 0.198rem; }
+      .Vport .Vport-right .Vport-right-K ul li p {
+        width: 4.265rem;
+        line-height: 0.3905rem; }
+
+.server_title {
+  width: 17.7rem;
+  height: 0.489rem;
+  background: #f5f6fa;
+  z-index: 1000;
+  overflow: hidden;
+  position: relative; }
+  .server_title .server_con {
+    height: 0.28rem;
+    margin: 0.14rem 0 0.082rem 1.468rem;
+    display: flex; }
+    .server_title .server_con li {
+      height: 100%;
+      margin-right: 0.629rem;
+      position: relative;
+      cursor: pointer; }
+      .server_title .server_con li a {
+        display: line-block;
+        line-height: 0.28rem;
+        font-size: 0.163rem;
+        color: #89909a;
+        position: absolute;
+        right: 0;
+        font-family: "微软雅黑体"; }
+    .server_title .server_con .first {
+      width: 1.072rem; }
+      .server_title .server_con .first img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+    .server_title .server_con .second {
+      width: 1.864rem; }
+      .server_title .server_con .second img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+    .server_title .server_con .third {
+      width: 1.154rem; }
+      .server_title .server_con .third img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+      .server_title .server_con .third a {
+        left: 0.419rem;
+        background: url(../../../dist/xialaicon.png) no-repeat right; }
+    .server_title .server_con .forth {
+      width: 1.119rem; }
+      .server_title .server_con .forth img {
+        height: 0.326rem;
+        position: absolute;
+        left: 0;
+        top: -0.023rem; }
+
+.server_banner {
+  width: 17.7rem;
+  height: 2.097rem;
+  background: url(../../../dist/vive-support-banner-search.jpg) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden; }
+  .server_banner .server_contain {
+    width: 10.487rem;
+    margin: 0.839rem auto;
+    z-index: 1000; }
+    .server_banner .server_contain h3 {
+      width: 100%;
+      height: 0.385rem;
+      font-size: 0.256rem;
+      line-height: 0.385rem;
+      text-align: center;
+      font-family: "微软雅黑体"; }
+    .server_banner .server_contain div {
+      width: 100%;
+      position: relative; }
+      .server_banner .server_contain div #search {
+        width: 100%;
+        height: 0.466rem;
+        border: 1px solid #e5e6e8;
+        border-radius: 0.35rem;
+        padding-left: 0.221rem;
+        font-size: 0.186rem; }
+      .server_banner .server_contain div .submit {
+        width: 0.198rem;
+        height: 0.175rem;
+        border: none;
+        background: url(../../../dist/search.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        right: 0.28rem;
+        top: 50%;
+        margin-top: -0.087rem; }
+
+.server_main {
+  width: 14.426rem;
+  margin: 0.897rem 1.923rem 4.708rem 1.41rem; }
+  .server_main .server_zhuti {
+    width: 100%; }
+    .server_main .server_zhuti dt {
+      font-size: 0.245rem;
+      margin-bottom: 0.594rem; }
+    .server_main .server_zhuti dd {
+      width: 3.321rem;
+      float: left;
+      margin-right: 0.373rem; }
+      .server_main .server_zhuti dd h4 {
+        width: 100%;
+        height: 0.431rem;
+        font-size: 0.221rem;
+        border-bottom: 2px solid #000;
+        color: #3c3c3c; }
+      .server_main .server_zhuti dd p {
+        position: relative;
+        margin: 0.443rem auto;
+        height: 0.816rem;
+        cursor: pointer;
+        font-family: "微软雅黑体";
+        border-bottom: 0.012rem solid #e6e8ea; }
+        .server_main .server_zhuti dd p img {
+          position: absolute;
+          top: 0;
+          left: 40%; }
+        .server_main .server_zhuti dd p span {
+          width: 1.608rem;
+          font-size: 0.151rem;
+          color: #89909a;
+          position: absolute;
+          bottom: 0;
+          text-align: center;
+          left: 50%;
+          margin-left: -0.804rem; }
+      .server_main .server_zhuti dd p:hover img {
+        color: #00b5e2;
+        opacity: 0.5; }
+      .server_main .server_zhuti dd p:hover span {
+        color: #00b5e2; }
+    .server_main .server_zhuti .last {
+      margin-right: 0; }
+  .server_main .server_article {
+    width: 100%; }
+    .server_main .server_article h4 {
+      font-size: 0.245rem;
+      margin-bottom: 0.163rem;
+      font-family: "微软雅黑体"; }
+    .server_main .server_article ul {
+      width: 4.148rem;
+      margin-right: 3.437rem;
+      height: 2.598rem;
+      float: left; }
+      .server_main .server_article ul li {
+        width: 100%; }
+        .server_main .server_article ul li a {
+          display: block;
+          color: #3c3c3c;
+          font-size: 0.21rem;
+          margin-top: 0.221rem; }
+      .server_main .server_article ul li:hover a {
+        color: #00b5e2; }
+    .server_main .server_article .last {
+      margin-right: 0; }
+  .server_main .server_video {
+    width: 9.205rem;
+    margin-top: 1.608rem; }
+    .server_main .server_video h4 {
+      font-size: 0.245rem;
+      margin-bottom: 0.175rem;
+      font-family: "微软雅黑体"; }
+
+html {
+  font-size: 20px; }
+
+body [v-cloak] {
+  display: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.Bo-lun {
+  width: 17.7rem;
+  overflow: hidden;
+  position: relative; }
+  .Bo-lun ul {
+    height: 6.176rem;
+    overflow: hidden;
+    margin-left: -17.7rem; }
+    .Bo-lun ul li {
+      width: 17.7rem;
+      height: 6.176rem; }
+      .Bo-lun ul li div {
+        margin-top: 1.34rem;
+        margin-left: 4.078rem;
+        color: white;
+        width: 9.532rem; }
+        .Bo-lun ul li div h1 {
+          font-size: 0.466rem;
+          font-weight: bolder;
+          text-align: center; }
+        .Bo-lun ul li div h2 {
+          text-align: center;
+          font-size: 0.233rem;
+          line-height: 0.466rem;
+          margin-top: 0.408rem; }
+        .Bo-lun ul li div h3 {
+          text-align: center;
+          margin-top: 0.408rem;
+          font-style: italic;
+          font-size: 0.163rem; }
+    .Bo-lun ul li.B-banner {
+      background: url(../../../dist/B-banner.png);
+      background-size: 100%; }
+    .Bo-lun ul li.B-banner1 {
+      background: url(../../../dist/B-banner1.jpg);
+      background-size: 100%; }
+    .Bo-lun ul li.B-banner2 {
+      background: url(../../../dist/B-banner2.jpg);
+      background-size: 100%; }
+  .Bo-lun .B-left {
+    width: 0.636rem;
+    height: 0.636rem;
+    z-index: 20;
+    position: absolute;
+    top: 2.4rem;
+    left: 0.711rem;
+    background: url(../../../dist/zl.png) no-repeat; }
+  .Bo-lun .B-right {
+    top: 2.4rem;
+    right: 0.711rem;
+    position: absolute;
+    width: 0.636rem;
+    z-index: 20;
+    height: 0.636rem;
+    background: url(../../../dist/yl.png) no-repeat; }
+
+.B-content {
+  padding-left: 1.282rem;
+  padding-right: 1.037rem;
+  padding-top: 0.233rem; }
+
+.B-con {
+  width: 4.871rem;
+  border: 1px solid #e1e1e1;
+  border-left: 0;
+  margin-right: 0.151rem;
+  margin-top: 0.233rem; }
+  .B-con img {
+    width: 100%;
+    height: 100%; }
+  .B-con h1 {
+    font-size: 0.245rem;
+    color: #00b5e2;
+    font-weight: bolder;
+    margin-top: 0.291rem;
+    margin-left: 0.303rem; }
+  .B-con h2 {
+    font-style: italic;
+    font-size: 0.163rem;
+    margin-bottom: 0.35rem;
+    margin-top: 0.326rem;
+    margin-left: 0.303rem; }
+
+.B-btn a {
+  float: left;
+  width: 2.738rem;
+  height: 0.699rem;
+  text-align: center;
+  line-height: 0.699rem;
+  border: 2px solid #e3e3e3;
+  color: #3c3c3c;
+  margin-top: 0.291rem;
+  margin-left: 7.469rem; }
+
+html {
+  font-size: 20px;
+  font-family: "Fakt-Normal",Helvetica,Arial,'微软雅黑體','Microsoft YaHei'; }
+
+header {
+  height: 70px;
+  position: relative;
+  z-index: 10000; }
+  header .navbar-default {
+    width: 1519px;
+    position: fixed;
+    top: 0;
+    background: #111820; }
+    header .navbar-default .navbar-header .navbar-toggle {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin: 15px 0 0 0;
+      border: none;
+      top: 0;
+      left: 16.313rem;
+      padding: 0; }
+      header .navbar-default .navbar-header .navbar-toggle span {
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+        margin-top: 6px; }
+    header .navbar-default .navbar-header .navbar-toggle:hover {
+      background: none; }
+    header .navbar-default .navbar-header .navbar-toggle:active {
+      transform-origin: center;
+      transition: 1s all ease;
+      transform: rotate(360deg); }
+    header .navbar-default .navbar-brand {
+      width: 114px;
+      height: 28px;
+      background: url(../../../dist/logo.png), no-repeat;
+      background-size: 100%;
+      margin: 22px 0 20px 120px; }
+      header .navbar-default .navbar-brand a {
+        display: block;
+        text-indent: -9999px; }
+    header .navbar-default .navbar-nav {
+      width: 431px;
+      height: 70px;
+      margin-left: 49px;
+      display: flex; }
+      header .navbar-default .navbar-nav li {
+        margin-right: 30px;
+        line-height: 70px;
+        box-sizing: border-box; }
+        header .navbar-default .navbar-nav li a {
+          display: block;
+          color: #ccc;
+          font-size: 16px;
+          font-family: '雅黑';
+          text-decoration: none; }
+      header .navbar-default .navbar-nav .last {
+        margin-right: 0; }
+      header .navbar-default .navbar-nav li:hover {
+        border-bottom: 4px solid #00b5e2; }
+        header .navbar-default .navbar-nav li:hover a {
+          color: #fff; }
+    header .navbar-default #htcVive {
+      width: 659px;
+      margin-left: 30px; }
+      header .navbar-default #htcVive #orderVive {
+        width: 135px;
+        height: 42px;
+        border: 2px solid #00c9fb;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 18px 24px 10px 0;
+        text-align: center;
+        line-height: 36px; }
+        header .navbar-default #htcVive #orderVive a {
+          display: block;
+          font-size: 16px;
+          font-family: '微软雅黑体';
+          text-decoration: none;
+          color: #00b5e2; }
+      header .navbar-default #htcVive #orderVive:hover {
+        background: #00b5e2; }
+        header .navbar-default #htcVive #orderVive:hover a {
+          color: #000; }
+      header .navbar-default #htcVive #downloadVive {
+        width: 164px;
+        height: 42px;
+        border: 2px solid #00c9fb;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 18px 0 10px 0;
+        text-align: center;
+        line-height: 36px; }
+        header .navbar-default #htcVive #downloadVive a {
+          display: block;
+          font-size: 16px;
+          font-family: '微软雅黑体';
+          text-decoration: none;
+          color: #00b5e2; }
+      header .navbar-default #htcVive #downloadVive:hover {
+        background: #00b5e2; }
+        header .navbar-default #htcVive #downloadVive:hover a {
+          color: #000; }
+      header .navbar-default #htcVive #login {
+        width: 127px;
+        height: 23px;
+        margin: 22px 0 25px 150px;
+        position: relative; }
+        header .navbar-default #htcVive #login a {
+          display: block;
+          height: 16px;
+          color: #fff;
+          font-size: 16px;
+          font-family: '微软雅黑';
+          position: absolute;
+          left: 0;
+          bottom: 28px;
+          text-decoration: none; }
+      header .navbar-default #htcVive #login:hover {
+        border: none; }
+    header .navbar-default .htc {
+      width: 0.618rem;
+      height: 0.233rem;
+      background: url(../../../dist/htc.png), no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 2.33rem;
+      top: 0.28rem;
+      z-index: 1; }
+
+/*# sourceMappingURL=index.css.map */

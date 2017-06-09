@@ -1,0 +1,125 @@
+$clientWidth:17.7rem;
+$bannerWidth:4.428rem;
+$bannerHeight:5.5rem;
+$bannerLastHeight:2.715rem;
+$videoHeight:5.069rem;
+@mixin banner-text(){
+	position: absolute;
+	color: #3c3c3c;
+	font-size: 0.198rem;
+	margin:0 0.21rem;
+	width: $bannerWidth - 0.419rem;
+	height: 0.932rem;
+	text-align: center;
+	line-height: 0.932rem;
+	border: none;
+	b{
+		font-weight: 800;
+	}
+	.last{
+		color: #fff;
+	}	
+}
+@keyframes banner{
+	0% {
+		transform:scale(1.5,1.5);
+	}
+	20% {
+		transform:scale(1.5,1.5);
+	}
+	50% {
+		border-radius: 50%;
+		transform:translate(-20px,-270px);
+		transform:scale(2,2);
+	}
+	55% {
+		border-radius: 50%;
+		transform-origin:center;
+		transform:translate(0px,-270px);
+		transform:scale(2,2);
+	}
+	65% {
+		border-radius: 50%;
+		transform:scale(2,2);
+	}
+	75% {
+		border-radius: 50%;
+		transform:scale(2,2);
+		z-index: 1000;
+	}
+	85% {
+		border-radius: 50%;
+		transform:scale(2,2);
+	}
+	95% {
+		border-radius: 50%;
+	}
+	100% {
+		border-radius: 50%;
+	}
+}
+#banner-box{
+	width: $clientWidth;
+	display: flex;
+	div{
+		width: $bannerWidth;
+		height:$bannerHeight;
+		border-left: 0.047rem solid #fff;
+		border-bottom: 0.058rem solid #fff;
+		border-top: 0.07rem solid #fff;
+		cursor: pointer;
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.box-text{
+			@include banner-text();
+			.text-last{
+				position: absolute;
+				color: #fff;
+				font-weight: 700;
+				font-size: 0.198rem;
+				letter-spacing: 0.1em;
+				width: 3.927rem;
+				height: 0.326rem;
+				line-height: 0.326rem;
+				text-align: center;
+				top: 0.571rem;
+				left: 0;
+			}
+		}
+		
+	}
+	.last{
+		div{
+			width: $bannerWidth;
+			height: $bannerLastHeight;
+			border-bottom: 0.047rem solid #fff;
+			border-top: none;
+			border-left: none;
+			border-right: 0.047rem solid #fff;
+			.box-text{
+				@include banner-text();
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	img:hover{
+		animation:2s banner ease forwards;
+		z-index: 1000000;
+		position: absolute;
+	}
+}
+.video{
+	width: $clientWidth;
+	height:$videoHeight;
+	video{
+		width: 100%;
+		height:auto;
+		position: relative;
+	}
+}

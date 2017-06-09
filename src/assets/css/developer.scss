@@ -1,0 +1,290 @@
+html{
+	font-size: 20px;
+  	font-family:'微软雅黑體'; 	
+}
+@mixin radius($width,$height) {
+	float:left;
+	font-size:0.186rem;
+	color:white;
+	background:#00b5e2;
+	width: $width;
+	height:$height;
+	line-height:$height;
+	text-align:center;
+	border-radius:0.233rem;
+}
+@mixin radiusH(){
+	color:black;
+	background:#00c9fb;
+}
+a:hover{
+	text-decoration:none;
+}
+body{
+	width: 17.7rem;
+}
+// 头部
+.Htab{
+	width: 17.7rem;
+	height:0.583rem;
+	background:#41464d;
+	ul{
+		margin-left: 1.608rem;
+		li{
+			font-size:0.14rem;
+			color:white;
+			height: 0.536rem;
+			line-height:0.536rem;
+			float: left;
+			margin-right:0.419rem;
+		}
+		li.active{
+			border-bottom: 0.047rem solid #00b5e2;
+		}
+		.VR-item{
+			position: relative;
+			.VR-item1{
+				display: none;
+				background:#61666b;
+				opacity:0.8;
+				margin-top:0.047rem;
+				position:absolute;
+				span{
+					width: 0.979rem;
+					margin-left:0.117rem;
+					color:#b0b2b5;
+					font-size:0.175rem;
+					height:0.583rem;
+					line-height:0.583rem;
+					display: block;
+					cursor:pointer;
+				}
+				span:hover{
+					color:white;
+				}
+			}
+		}
+	}
+}
+// banner部分
+.Banner{
+	width: 100%;
+	height: 4.428rem;
+	background:url(../../../dist/banner-developer-portal.jpg);
+	background-size:100%;
+	.jieshao{
+		margin-left: 1.655rem;
+		margin-top: 0.967rem;
+		font-size:0.315rem;
+		// width: 169px;
+		strong{
+			display: block;
+			font-weight: bolder;
+		}
+		h2{
+			margin-top: 0.385rem;
+			width: 5.313rem;
+			font-size:0.198rem;
+		}
+		.CW{
+			margin-top: 0.35rem;
+			.aBtn{
+				margin-right: 0.419rem;
+				@include radius(1.655rem,0.466rem)
+			}
+			.aBtn:hover{
+				@include radiusH();
+			}
+			span{
+				font-size:0.186rem;
+				a{
+					color:#00b9e6;
+				}
+			}
+		}
+	}
+}
+
+// Viveport部分
+.Vport{
+	background:#e0e0e0;
+	padding:1.037rem 1.748rem 1.573rem 1.608rem; 
+	.Vport-left{
+		width: 7.621rem;
+		margin-top: 0.792rem;
+		margin-right: 1.492rem;
+		.Vport-logo{
+			width: 4.684rem;
+			height: 0.699rem;
+			margin-left: -0.59rem;
+			margin-bottom: 0.117rem;
+			background:url(../../../dist/viveport-premier.png);
+			background-size:100%;
+		}
+		.Vport-content{
+			.Vport-content1{
+				margin-top: 0.431rem;
+				.sto{
+					margin-bottom: 0.21rem;
+					font-size:0.256rem;
+					font-weight:bolder;
+				}
+				.sto1{
+					font-size:0.186rem;
+				}				
+			}
+		}
+		.Vport-btn{
+			width: 100%;
+			height: 1.725rem;
+			background:#d7d7d7;
+			margin-top: 0.629rem;
+			h1{
+				font-size:0.256rem;
+				font-weight: bold;
+				width: 100%;	
+				text-align:center;
+				margin-top: 0.408rem;
+			}
+			.Xbtn{
+				margin-left: 2.82rem;
+				margin-top: 0.291rem;
+				@include radius(1.981rem,0.443rem)
+			}
+			.Xbtn:hover{
+				@include radiusH();
+			}
+		}
+		.Vport-btn1{
+			margin-top: 0.117rem;
+			.Vport-btna{
+				width: 1.981rem;
+				height: 1.666rem;
+				padding: 0.385rem 0.233rem 0.35rem 0.233rem;
+				background:#d7d7d7;
+				margin-right: 0.14rem;
+				h1{
+					width: 100%;
+					text-align:center;
+					font-size:0.163rem;
+					height: 1.025rem;
+				}
+				.Hbtn{
+					@include radius(1.981rem,0.443rem)
+				}
+				.Hbtn:hover{
+				@include radiusH();
+				}
+			}
+			.Vport-btnas{
+				margin: 0;
+			}
+		}
+			.V-vid{
+				width:8.949rem;
+				height: 5.745rem;
+				margin-top: 2.097rem;
+				position: relative;
+				.V-vid-btn{
+					position: absolute;
+					width: 1.189rem;
+					height: 0.816rem;
+					border-radius:20px;
+					background:#17181a;
+					opacity:0.9;
+					z-index: 20;
+					left: 50%;
+					top: 50%;
+					margin-left: -0.594rem;
+					margin-top: -0.408rem;
+					img{
+						width: 29px;
+						height: 29px;
+						margin-left:0.466rem;
+						margin-top: 0.233rem;
+					}
+				}
+				.V-video{
+					width: 100%;
+					height: 100%; 
+				}
+			}
+		.V-web{
+			margin-top: 0.501rem;
+			h1{
+				font-size:28px;
+				font-weight: bold;
+			}
+			p{
+				font-size:0.186rem;
+				margin-top: 0.35rem;
+				margin-bottom:0.291rem; 
+			}
+			.Web-btn{
+				@include radius(1.107rem,0.466rem)
+			}
+			a:hover{
+				@include radiusH();
+			}
+		}
+	}
+	.Vport-right{
+		.Vport-right-R{
+			h1{
+				font-size:0.233rem;
+				font-weight:bold;
+			}
+			margin-bottom: 0.385rem;
+		}
+		.Vport-right-Htc{
+			p{
+				width: 4.346rem;
+				line-height:0.3905rem;
+				font-size:0.21rem;
+				font-weight:lighter;
+			} 
+		}
+		.Vport-right-re{
+			margin-top: 0.385rem;
+			h1{
+				color:#3c3c3c;
+				font-size:0.245rem;
+				font-weight: bolder;
+			}
+			li{
+				margin-top: 0.256rem;
+				a{
+					color:#00b5e2;
+		
+				}
+				a:hover{
+						color:#00c9fb;
+					}
+			}
+		}
+		.Vport-right-K{
+			margin-top: 0.676rem; 
+			h1{
+				font-size:0.233rem;
+				font-weight:bold;				
+			}
+			ul{
+				li{
+					font-size:0.186rem;
+					color:#3c3c3c;
+					h2{
+						margin-top: 0.419rem;
+					}
+					h2.sk{
+						color:#00b5e2;
+						margin-top: 0.198rem;
+					}
+					p{
+						width: 4.265rem;
+						line-height:0.3905rem;
+					}
+				}
+			}
+		}
+	}
+}

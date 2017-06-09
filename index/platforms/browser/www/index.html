@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0">
+	<title>播放器</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css"/>
+	<link rel="stylesheet" href="css/sidebar.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/diantai.css"/>
+	<link rel="stylesheet" href="css/playing.css"/>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/sideBar.js"></script>
+	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/vue-resource.js"></script>
+	<script>
+		function getPos(obj){
+	        var l=0;
+	        var t=0;
+	        while(obj){
+	            l+=obj.offsetLeft;
+	            t+=obj.offsetTop;
+	            obj=obj.offsetParent;
+	        }
+
+	        return {left:l,top:t}
+	    }
+		window.onload = window.onresize = function (){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth * 20 / 320 + 'px';
+			var bofangniu=document.querySelectorAll('.bofangniu');
+			var zhuanjitu1=document.querySelector('#zhuanpan');
+			var zhuanjitu2=document.querySelector('#zhuanpan2');
+			var bofangf=document.querySelector('#bofangf');
+			var bofangf2=document.querySelector('#bofangf2');
+			var music1 = document.getElementById('music1');
+			var music2 = document.getElementById('music2');
+			var search = document.querySelectorAll('.chazhaod');
+			var start = document.getElementById('start');
+			var musicAudio = document.getElementById('musicAudio');    
+	    	var music_btn = document.getElementById('musicPlay');
+	    	var startTime=document.getElementById('starttime');
+	    	var endTime=document.getElementById('endtime');
+	    	var jindu=document.getElementById('jindu');
+	    	var jindutiao=document.getElementById('jindutiao');
+	    	var laba=document.getElementById('laba');
+	    	var voldx=document.getElementById('voldx');
+	    	var voltiao=document.getElementById('voltiao');
+	    	var zhuanjitu=document.getElementById('zhuanjitu');
+			function music(obj1,obj2,obj3){
+				if (obj1.paused){    
+        		obj1.play(); 
+        		 obj2.style.animation='60s'+' '+'zhuandong1'+' '+'linear'+' '+'infinite';
+        		 obj3.src="img/switch1.png";
+        		}else{    
+       			 obj1.pause(); 
+       			 obj2.style.animationPlayState="paused";
+       			 obj3.src="img/switch.png";
+   			 	} 
+			}
+			bofangniu[0].onclick=function(){
+			  	music(music1,zhuanjitu1,bofangf);
+			};
+			bofangniu[1].onclick = function(){
+			 	music(music2,zhuanjitu2,bofangf2);
+			}
+			var vm = new Vue({
+				data:{
+					data:[{
+						src:"img/music.png",
+						name:'音乐',
+						href:"index.html"
+					},{
+						src:"img/radios.png",
+						name:'电台',
+						href:"#pagebox2"
+					},{
+						src:"img/plays.png",
+						name:'MV',
+						href:"#pagebox2"
+					},{
+						src:"img/icon.png",
+						name:'听歌识曲',
+						href:"#pagebox2"
+					},{
+						src:"img/download.png",
+						name:'下载',
+						href:"#pagebox2"
+					},{
+						src:"img/user.png",
+						name:'个人中心',
+						href:"login.html"
+					},{
+						src:"img/setting.png",
+						name:'设置',
+						href:"login.html"
+					}]
+				},
+			}).$mount('#menu');
+			setTimeout(function(){
+				start.style.display = 'none';
+			},2000);
+			musicAudio.volume=0.5; 
+			function time(a){
+				function mss(){
+					if (Math.ceil(a%60)<10) {
+						return '0'+Math.ceil(a%60);
+					}else{
+						return Math.ceil(a%60);
+					}
+				}
+        		return '0'+Math.floor(a/60)+':'+mss();
+			}
+			//获取歌曲总时间
+			if(isNaN(musicAudio.duration)){
+				endTime.innerHTML = '04 : 11';
+			}else{
+				endTime.innerHTML=time(musicAudio.duration);
+			}
+			
+			//获取歌曲当前播放时间
+			function currentTime(){
+				function mss1(){
+					if (Math.floor(musicAudio.currentTime%60)<10) {
+						return '0'+Math.floor(musicAudio.currentTime%60);
+					}else{
+						return Math.floor(musicAudio.currentTime%60);
+					}
+				}
+				return '0'+Math.floor(musicAudio.currentTime/60)+':'+mss1();
+			}
+			music_btn.onclick=function() { 
+			   	if (musicAudio.paused){    
+	        		musicAudio.play(); 
+		        	zhuanjitu.style.animation='60s'+' '+'zhuandong1'+' '+'linear'+' '+'infinite';
+		        	music_btn.style.background = 'url(img/pause.png)';
+					music_btn.style.backgroundSize = '100% 100%';
+			        timer=setInterval(function(){
+						startTime.innerHTML=currentTime();
+						jindu.style.width=(musicAudio.currentTime/musicAudio.duration)*14.074+'rem';
+
+						if(musicAudio.ended){
+							clearInterval(timer);
+							jindu.style.width=0;
+						}
+
+				    },1000);         
+				}else{    
+				    	musicAudio.pause(); 
+						zhuanjitu.style.animationPlayState="paused";
+				        clearInterval(timer);
+				        music_btn.style.background = 'url(img/playxx.png)';
+						music_btn.style.backgroundSize = '100% 100%';   
+			   		}    
+			};
+			jindutiao.onclick=function(evt){
+				var disx=evt.clientX-getPos(jindutiao).left;
+				var ds=950/1080*document.documentElement.clientWidth;
+				var prob=disx/ds;
+				jindu.style.width=prob*14.074+'rem';
+				starttime.innerHTML=time(musicAudio.duration*prob);
+				musicAudio.currentTime=musicAudio.duration*prob;
+			};
+			jindu.onclick=function(evt){
+				var disx=evt.clientX-getPos(jindutiao).left;
+				var ds=950/1080*document.documentElement.clientWidth;
+				var prob=disx/ds;
+				jindu.style.width=prob*14.074+'rem';
+				starttime.innerHTML=time(musicAudio.duration*prob);
+				musicAudio.currentTime=musicAudio.duration*prob;
+			};
+			voltiao.onclick=function(evt){
+				var disx=evt.clientX-getPos(voltiao).left;
+				var ds=830/1080*document.documentElement.clientWidth;
+				var prob=disx/ds;
+				voldx.style.width=prob*12.296+'rem';
+				var relVol=parseInt(100*prob)/100;
+	    		musicAudio.volume=relVol;
+			};
+			voldx.onclick=function(evt){
+				var disx=evt.clientX-getPos(voltiao).left;
+				var ds=830/1080*document.documentElement.clientWidth;
+				var prob=disx/ds;
+				voldx.style.width=prob*12.296+'rem';
+				var relVol=parseInt(100*prob)/100;
+	    		musicAudio.volume=relVol;
+			};
+			laba.onclick=function(muteSwitch){
+				var cVol=voldx.style.width;
+				if (muteSwitch==="on") {
+					voldx.attributes["data-volume"].nodeValue = musicAudio.volume;
+					voldx.attributes["data-width"].nodeValue = cVol;
+					musicAudio.volume=0.0;
+					voldx.style.width=0;
+				}
+				if (muteSwitch==="off") {
+					musicAudio.volume=voldx.attributes["data-volume"].nodeValue;
+					voldx.style.width=cVol;
+				}
+			};
+			
+		};
+	</script>
+</head>
+<body>
+	
+	<!-- 音乐 -->
+	<content data-role="page" id="pagebox">
+		<img src="img/start.png" alt="" id="start" />
+		<div data-role="header" class="clearfix top" style="height:3.407rem;position:relative">
+			<div class="topd" id="head">
+				<div class="topd1" id="topd1"></div>
+				<div class="btnd xiala"><span></span><span></span><span></span></div>
+				<h3>音乐</h3>
+				<a class="chazhaod" href="seek.html"></a>
+				<a class="sandiand"><span></span><span></span><span></span></a>
+			</div>
+		</div>
+		<div data-role="main" class="main">
+			<!-- 轮播图 -->
+			<div class="banner clearfix">
+				<a href="javascript:;" id="left"></a>
+				<a href="javascript:;" id="right" ></a>
+				<ul class="banner1">
+					<li><img src="img/banner2.jpg" alt=""></li>
+					<li><img src="img/banner.jpg" alt=""></li>
+					<li><img src="img/banner1.jpg" alt=""></li>
+					<li><img src="img/banner2.jpg" alt=""></li>
+					<li style="margin: 0;"><img src="img/banner.jpg" alt=""></li>
+				</ul>
+				<p>Beauty And The Beast</p>
+				<div class="yuan">
+					<a class="active" href="javascript:;"></a>
+					<a class="aA" href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+			<!-- 热歌速递 -->
+			<div class="hot clearfix">
+				<div class="hot1">热歌速递</div>
+				<ul class="hotB clearfix">
+					<li class="hotl">
+					<img class="img" src="img/hot2.jpg" alt="">
+					<img class="img1" src="img/hot1.jpg" alt="">
+					<img class="img3" src="img/hot.jpg" alt="">
+					<p></p>
+					</li>			
+					<li class="hotm">
+					<img class="img" src="img/hot.jpg" alt="">
+					<img class="img1" src="img/hot2.jpg" alt="">
+					<img class="img3" src="img/hot1.jpg" alt="">
+					</li>			
+					<li class="hotr">
+					<img class="img" src="img/hot1.jpg" alt="">
+					<img class="img1" src="img/hot.jpg" alt="">
+					<img class="img3" src="img/hot2.jpg" alt="">
+					</li>
+					<li class="hotL"><p>Trip-Hop | 致迷致幻 神游天外</p></li>
+					<li class="hotM"><p>绵绵不绝的温柔 循环不止的女声</p></li>
+					<li><p>在春风沉醉的晚上来曲华语摇滚</p></li>
+				</ul>		
+				<ul class="hotB hotN clearfix">
+					<li class="hotl">
+					<img class="img" src="img/hot2.jpg" alt="">
+					<img class="img1" src="img/hot1.jpg" alt="">
+					<img class="img3" src="img/hot.jpg" alt="">
+					<p></p>
+					</li>			
+					<li class="hotm">
+					<img class="img" src="img/hot.jpg" alt="">
+					<img class="img1" src="img/hot2.jpg" alt="">
+					<img class="img3" src="img/hot1.jpg" alt="">
+					</li>			
+					<li class="hotr">
+					<img class="img" src="img/hot1.jpg" alt="">
+					<img class="img1" src="img/hot.jpg" alt="">
+					<img class="img3" src="img/hot2.jpg" alt="">
+					</li>
+					<li class="hotL"><p>Trip-Hop | 致迷致幻 神游天外</p></li>
+					<li class="hotM"><p>绵绵不绝的温柔 循环不止的女声</p></li>
+					<li><p>在春风沉醉的晚上来曲华语摇滚</p></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 播放框 -->
+		<div data-role="footer">
+			<div class="play clearfix">
+				<p class="zjt"><a href="#pagebox3"><img id="zhuanpan" src="img/ganghao.jpg"></a></p><ul class="geinfo1"><li class="geming1">刚刚好</li><li>薛之谦</li></ul><span class="bofangniu"><img id="bofangf" src="img/switch.png"></span><span class="tianjiag">+</span>
+				<audio id="music1" src="ggh.mp3" loop="loop"></audio>
+			</div>
+		</div>
+	</content>
+	<!-- 电台 -->
+	<content data-role="page" id="pagebox2">
+		<div data-role="header">
+			<div class="topd" id="head2">
+				<div class="btnd xiala"><span></span><span></span><span></span></div>
+				<h3>电台</h3>
+				<a class="chazhaod" href="seek.html"></a>
+				<a class="sandiand"><span></span><span></span><span></span></a>
+			</div>
+			<div class="topd1" id="topd1"></div>
+		</div>
+		<div data-role="main" class="clearfix main">
+			<div class="diantaixiang clearfix">
+				<ul class="diantaixiangl">
+					<li><img src="img/diantai1.jpg"></li>
+					<li><img src="img/diantai3.jpg"></li>
+					<li><img src="img/diantai5.jpg"></li>
+					<li><img src="img/diantai7.jpg"></li>
+					<span class="dibukong"></span>
+				</ul>
+				<ul class="diantaixiangr">
+					<li><img src="img/diantai2.jpg"></li>
+					<li><img src="img/diantai4.jpg"></li>
+					<li><img src="img/diantai6.png"></li>
+					<li><img src="img/diantai8.jpg"></li>
+					<span class="dibukong"></span>
+				</ul>
+			</div>
+			
+		</div>
+		<!-- </div> -->
+		<div data-role="footer">
+			<div class="play clearfix">
+				<p class="zjt"><a href="#pagebox3"><img id="zhuanpan2" src="img/ganghao.jpg"></a></p><ul class="geinfo1"><li class="geming1">刚刚好</li><li>薛之谦</li></ul><span class="bofangniu"><img id="bofangf2" src="img/switch.png"></span><span class="tianjiag">+</span>
+				<audio id="music2" src="ggh.mp3" loop="loop"></audio>
+			</div>
+			
+		</div>
+	</content>
+	<!-- 正在播放 -->
+	<content data-role="page" id="pagebox3">
+		<div data-role="header">
+			<div class="toph" id="head3" class="clearfix top" style="height:3.407rem;position:relative">
+				<div class="btnd xiala"><span></span><span></span><span></span></div>
+				<h3>正在播放</h3>
+				<a class="chazhaod" href="seek.html"></a>
+				<a class="sandiand"><span></span><span></span><span></span></a>
+			</div>
+			<div class="topd1" id="topd1"></div>
+		</div>
+		<div data-role="main" class="main">
+			<div class="m-loading">
+				<p class="jindutiao" id="jindutiao"></p>
+				<p class="jindu" id="jindu"></p>
+				<span class="starttime" id="starttime">00:00</span>
+				<span class="endtime" id="endtime">00:00</span>
+			</div>
+			<div class="tab01">
+				<ul class="gequinfo">
+					<li class="geming">刚刚好</li>
+					<li class="geshou">薛之谦</li>
+				</ul>
+				<div class="zhuanjitu" id="zhuanjitu"></div>
+			</div>
+			<div class="tab02"></div>
+		</div>
+		<div>
+			<div class="playxx"><p class="xunhuanfou"></p><p class="daotui"></p><a href="javascript:;" class="playfou" id="musicPlay"></a><p class="kuaijin"></p><p class="tianjiag2">+</p></div>
+			<audio id="musicAudio" src="ggh.mp3" loop="loop"></audio>
+			<div class="tiaojievol">
+				<span class="laba" id="laba"></span>
+				<p class="voltiao" id="voltiao"></p>
+				<p class="voldx" id="voldx"></p>
+			</div>
+		</div>
+	</content>
+	<!-- 侧边栏 -->
+	<div id="sideBar">
+		<h1 class="logo_side">
+			<a href="javacript:;">M</a>
+		</h1>
+		<div id="menu">
+			<a v-for="v in data" :class="$index == 1? 'second':' '&&$index == 2? 'third':' ' &&$index == 3? 'forth':' ' &&$index == 4? 'fifth':' ' &&$index == 5? 'sixth':' ' &&
+			$index == 6? 'settings':''"
+			:href="v.href">
+				<img :src='v.src' alt="img">
+				<span>{{v.name}}</span>
+			</a>
+		</div>
+		<!-- <a class="settings">
+			<img src="img/setting.png" alt="">
+			<span>設置</a>
+		</a> -->
+	</div>
+</body>
+</html>

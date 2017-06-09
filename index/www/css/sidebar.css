@@ -1,0 +1,97 @@
+#sideBar {
+  width: 12.726rem;
+  height: 100%;
+  background: url(../img/sideBar.png) no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 0;
+  left: -28.296rem;
+  z-index: 1000; }
+  #sideBar .logo_side {
+    width: 1.644rem;
+    height: 1.2rem;
+    margin: 1.704rem 10.444rem 1.526rem 0.593rem;
+    background: url(../img/logo2.png) no-repeat;
+    background-size: 100% 100%; }
+    #sideBar .logo_side a {
+      display: block;
+      text-indent: -99999rem;
+      text-decoration: none; }
+  #sideBar #menu {
+    width: 12.726rem;
+    margin: 1.244rem 0 0; }
+    #sideBar #menu a {
+      display: block;
+      width: 100%;
+      height: 2.8rem;
+      position: relative;
+      text-decoration: none; }
+      #sideBar #menu a img {
+        width: 1.319rem;
+        height: 1.319rem;
+        position: absolute;
+        left: 0.593rem;
+        top: 0.756rem;
+        opacity: 0.54; }
+      #sideBar #menu a span {
+        font-size: 0.83rem;
+        color: #fff;
+        opacity: 0.54;
+        position: absolute;
+        top: 0.756rem;
+        left: 2.281rem;
+        text-decoration: none; }
+    #sideBar #menu a:hover {
+      background: #141b22; }
+      #sideBar #menu a:hover img {
+        opacity: 1; }
+      #sideBar #menu a:hover span {
+        opacity: 1;
+        color: #fdcb31; }
+    #sideBar #menu .second img {
+      width: 1.126rem;
+      height: 1.126rem;
+      position: absolute;
+      left: 0.593rem;
+      top: 0.815rem;
+      opacity: 0.54; }
+    #sideBar #menu .third img {
+      width: 1.052rem;
+      height: 1.022rem;
+      position: absolute;
+      left: 0.593rem;
+      top: 0.963rem;
+      opacity: 0.54; }
+    #sideBar #menu .forth img {
+      width: 1.067rem;
+      height: 1.23rem;
+      position: absolute;
+      left: 0.593rem;
+      top: 0.859rem;
+      opacity: 0.54; }
+    #sideBar #menu .fifth img {
+      width: 1.022rem;
+      height: 1.096rem;
+      position: absolute;
+      left: 0.593rem;
+      top: 0.859rem;
+      opacity: 0.54; }
+    #sideBar #menu .sixth img {
+      width: 1.037rem;
+      height: 1.141rem;
+      position: absolute;
+      left: 0.593rem;
+      top: 0.859rem;
+      opacity: 0.54; }
+  #sideBar .settings img {
+    width: 1.081rem;
+    height: 1.081rem;
+    position: absolute;
+    left: 0.593rem;
+    top: 0.785rem;
+    opacity: 0.54; }
+
+.hide {
+  overflow: hidden; }
+
+/*# sourceMappingURL=sidebar.css.map */

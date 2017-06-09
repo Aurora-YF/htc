@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html {
+  font-size: 20px;
+  font-family: '微软雅黑體'; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  width: 17.7rem; }
+
+.Htab {
+  width: 17.7rem;
+  height: 0.583rem;
+  background: #41464d; }
+  .Htab ul {
+    margin-left: 1.608rem; }
+    .Htab ul li {
+      font-size: 0.14rem;
+      color: white;
+      height: 0.536rem;
+      line-height: 0.536rem;
+      float: left;
+      margin-right: 0.419rem; }
+    .Htab ul li.active {
+      border-bottom: 0.047rem solid #00b5e2; }
+    .Htab ul .VR-item {
+      position: relative; }
+      .Htab ul .VR-item .VR-item1 {
+        display: none;
+        background: #61666b;
+        opacity: 0.8;
+        margin-top: 0.047rem;
+        position: absolute; }
+        .Htab ul .VR-item .VR-item1 span {
+          width: 0.979rem;
+          margin-left: 0.117rem;
+          color: #b0b2b5;
+          font-size: 0.175rem;
+          height: 0.583rem;
+          line-height: 0.583rem;
+          display: block;
+          cursor: pointer; }
+        .Htab ul .VR-item .VR-item1 span:hover {
+          color: white; }
+
+.Banner {
+  width: 100%;
+  height: 4.428rem;
+  background: url(../../../dist/banner-developer-portal.jpg);
+  background-size: 100%; }
+  .Banner .jieshao {
+    margin-left: 1.655rem;
+    margin-top: 0.967rem;
+    font-size: 0.315rem; }
+    .Banner .jieshao strong {
+      display: block;
+      font-weight: bolder; }
+    .Banner .jieshao h2 {
+      margin-top: 0.385rem;
+      width: 5.313rem;
+      font-size: 0.198rem; }
+    .Banner .jieshao .CW {
+      margin-top: 0.35rem; }
+      .Banner .jieshao .CW .aBtn {
+        margin-right: 0.419rem;
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.655rem;
+        height: 0.466rem;
+        line-height: 0.466rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Banner .jieshao .CW .aBtn:hover {
+        color: black;
+        background: #00c9fb; }
+      .Banner .jieshao .CW span {
+        font-size: 0.186rem; }
+        .Banner .jieshao .CW span a {
+          color: #00b9e6; }
+
+.Vport {
+  background: #e0e0e0;
+  padding: 1.037rem 1.748rem 1.573rem 1.608rem; }
+  .Vport .Vport-left {
+    width: 7.621rem;
+    margin-top: 0.792rem;
+    margin-right: 1.492rem; }
+    .Vport .Vport-left .Vport-logo {
+      width: 4.684rem;
+      height: 0.699rem;
+      margin-left: -0.59rem;
+      margin-bottom: 0.117rem;
+      background: url(../../../dist/viveport-premier.png);
+      background-size: 100%; }
+    .Vport .Vport-left .Vport-content .Vport-content1 {
+      margin-top: 0.431rem; }
+      .Vport .Vport-left .Vport-content .Vport-content1 .sto {
+        margin-bottom: 0.21rem;
+        font-size: 0.256rem;
+        font-weight: bolder; }
+      .Vport .Vport-left .Vport-content .Vport-content1 .sto1 {
+        font-size: 0.186rem; }
+    .Vport .Vport-left .Vport-btn {
+      width: 100%;
+      height: 1.725rem;
+      background: #d7d7d7;
+      margin-top: 0.629rem; }
+      .Vport .Vport-left .Vport-btn h1 {
+        font-size: 0.256rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.408rem; }
+      .Vport .Vport-left .Vport-btn .Xbtn {
+        margin-left: 2.82rem;
+        margin-top: 0.291rem;
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.981rem;
+        height: 0.443rem;
+        line-height: 0.443rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Vport .Vport-left .Vport-btn .Xbtn:hover {
+        color: black;
+        background: #00c9fb; }
+    .Vport .Vport-left .Vport-btn1 {
+      margin-top: 0.117rem; }
+      .Vport .Vport-left .Vport-btn1 .Vport-btna {
+        width: 1.981rem;
+        height: 1.666rem;
+        padding: 0.385rem 0.233rem 0.35rem 0.233rem;
+        background: #d7d7d7;
+        margin-right: 0.14rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 0.163rem;
+          height: 1.025rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna .Hbtn {
+          float: left;
+          font-size: 0.186rem;
+          color: white;
+          background: #00b5e2;
+          width: 1.981rem;
+          height: 0.443rem;
+          line-height: 0.443rem;
+          text-align: center;
+          border-radius: 0.233rem; }
+        .Vport .Vport-left .Vport-btn1 .Vport-btna .Hbtn:hover {
+          color: black;
+          background: #00c9fb; }
+      .Vport .Vport-left .Vport-btn1 .Vport-btnas {
+        margin: 0; }
+    .Vport .Vport-left .V-vid {
+      width: 8.949rem;
+      height: 5.745rem;
+      margin-top: 2.097rem;
+      position: relative; }
+      .Vport .Vport-left .V-vid .V-vid-btn {
+        position: absolute;
+        width: 1.189rem;
+        height: 0.816rem;
+        border-radius: 20px;
+        background: #17181a;
+        opacity: 0.9;
+        z-index: 20;
+        left: 50%;
+        top: 50%;
+        margin-left: -0.594rem;
+        margin-top: -0.408rem; }
+        .Vport .Vport-left .V-vid .V-vid-btn img {
+          width: 29px;
+          height: 29px;
+          margin-left: 0.466rem;
+          margin-top: 0.233rem; }
+      .Vport .Vport-left .V-vid .V-video {
+        width: 100%;
+        height: 100%; }
+    .Vport .Vport-left .V-web {
+      margin-top: 0.501rem; }
+      .Vport .Vport-left .V-web h1 {
+        font-size: 28px;
+        font-weight: bold; }
+      .Vport .Vport-left .V-web p {
+        font-size: 0.186rem;
+        margin-top: 0.35rem;
+        margin-bottom: 0.291rem; }
+      .Vport .Vport-left .V-web .Web-btn {
+        float: left;
+        font-size: 0.186rem;
+        color: white;
+        background: #00b5e2;
+        width: 1.107rem;
+        height: 0.466rem;
+        line-height: 0.466rem;
+        text-align: center;
+        border-radius: 0.233rem; }
+      .Vport .Vport-left .V-web a:hover {
+        color: black;
+        background: #00c9fb; }
+  .Vport .Vport-right .Vport-right-R {
+    margin-bottom: 0.385rem; }
+    .Vport .Vport-right .Vport-right-R h1 {
+      font-size: 0.233rem;
+      font-weight: bold; }
+  .Vport .Vport-right .Vport-right-Htc p {
+    width: 4.346rem;
+    line-height: 0.3905rem;
+    font-size: 0.21rem;
+    font-weight: lighter; }
+  .Vport .Vport-right .Vport-right-re {
+    margin-top: 0.385rem; }
+    .Vport .Vport-right .Vport-right-re h1 {
+      color: #3c3c3c;
+      font-size: 0.245rem;
+      font-weight: bolder; }
+    .Vport .Vport-right .Vport-right-re li {
+      margin-top: 0.256rem; }
+      .Vport .Vport-right .Vport-right-re li a {
+        color: #00b5e2; }
+      .Vport .Vport-right .Vport-right-re li a:hover {
+        color: #00c9fb; }
+  .Vport .Vport-right .Vport-right-K {
+    margin-top: 0.676rem; }
+    .Vport .Vport-right .Vport-right-K h1 {
+      font-size: 0.233rem;
+      font-weight: bold; }
+    .Vport .Vport-right .Vport-right-K ul li {
+      font-size: 0.186rem;
+      color: #3c3c3c; }
+      .Vport .Vport-right .Vport-right-K ul li h2 {
+        margin-top: 0.419rem; }
+      .Vport .Vport-right .Vport-right-K ul li h2.sk {
+        color: #00b5e2;
+        margin-top: 0.198rem; }
+      .Vport .Vport-right .Vport-right-K ul li p {
+        width: 4.265rem;
+        line-height: 0.3905rem; }
+
+/*# sourceMappingURL=developer.css.map */

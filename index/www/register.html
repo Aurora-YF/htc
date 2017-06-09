@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+		html{
+			font-size: 20px;
+		}
+		.register{
+			width: 16.0rem;
+			height: 28.444rem;
+			background: url(img/bgimg.png) no-repeat;
+			position: relative;
+			background-size:100% 100%;
+		}
+		.touxiang{
+			width: 3.259rem;
+			height: 3.259rem;
+			display: block;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			top:2.815rem;
+			left:50%;
+			margin-left: -1.6295rem;
+			background: url(img/timg.jpeg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.zhucexiang{
+			width: 14.519rem;
+			position: relative;
+			top:9.778rem;
+			margin:0 auto;
+		}
+		.zhucexiang li{
+			width: 14.593rem;
+			height: 1.481rem;
+			line-height: 1.481rem;
+			font-size: 0.593rem;
+			position: relative;
+			border-bottom:1px solid #5d6770; 
+			margin-bottom: 1.333rem;
+		}
+		.zhucexiang input{
+			background: none;
+			border: none;
+			outline: none;
+			width: 13.333rem;
+			height: 0.889rem;
+			position: absolute;
+			left:1.185rem;
+			bottom: 0.296rem;
+			font-size: 0.593rem;
+			color: #fff;
+		}
+		#eye{
+			width: 0.978rem;
+			height: 0.563rem;
+			background: url(img/eye.png) no-repeat;
+			background-size: 100% 100%;
+			opacity: 0.5;
+			position: absolute;
+			top: 0.37rem;
+			left: 13.333rem;
+			border:none;
+			cursor: pointer;
+			outline: none;
+			-webkit-tap-highlight-color: rgba(255,255,255,0);
+	}
+		.zhucexiang span{
+			color: #5d6770;
+			position: absolute;
+			left: 1.185rem;
+		}
+		.xianshi{
+			font-size: 0.563rem;
+			color:#5d6770;
+		}
+		.zhucejian{
+			font-size: 0.859rem;
+			color:black;
+			display: block;
+			width: 11.763rem;
+			height: 2.222rem;
+			background: white;
+			border-radius: 0.948rem;
+			text-align: center;
+			line-height: 2.222rem;
+			position: absolute;
+			top: 22.37rem;
+			left: 50%;
+			margin-left: -5.8815rem;
+		}
+		.showsecret{
+			width: 4.444rem;
+			height: 0.622rem;
+			top: 18.222rem;
+			left: 0.83rem;
+			position: absolute;
+		}
+		.xuanzhong{
+			border: 0.015rem solid #5d6770;
+			width: 0.593rem;
+			height: 0.593rem;
+			border-radius: 0.148rem;
+			float: left;
+		}
+		.xianshi{
+			font-size: 0.504rem;
+			float: left;
+			margin-left: 0.148rem;
+
+		}
+	</style>
+	<meta >
+	<script src="angular-1.5.6.js"></script>
+	<script type="text/javascript">
+	function span(obj1,obj2){
+		obj1.oninput = obj1.onpropertychange = function(){
+			obj2.style.display = 'none';
+			if(!obj1.value){
+				obj2.style.display = 'block';
+			}
+		};
+		obj2.onclick = function(){
+			obj1.focus();
+		};
+	}
+		window.onload=window.onresize=function (){
+      document.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+      var oInput = document.getElementsByTagName('input')[0];
+		var oSpan = document.getElementsByTagName('span')[0];
+		 var oInput1 = document.getElementsByTagName('input')[1];
+		var oSpan1 = document.getElementsByTagName('span')[1];
+		 var oInput2 = document.getElementsByTagName('input')[3];
+		var oSpan2 = document.getElementsByTagName('span')[2];
+		var eye = document.getElementById('eye');
+		span(oInput,oSpan);
+		span(oInput1,oSpan1);
+		span(oInput2,oSpan2);
+		
+		eye.onclick = function(){
+			var pass1 = oInput1.getAttribute('type');
+			var pass2 = oInput2.getAttribute('type');
+			if(pass1 == 'password' || pass2 == 'password'){
+				oInput1.type = 'text';
+				oInput2.type = 'text';
+				
+			}else{
+				oInput1.type = 'password';
+				oInput2.type = 'password';
+			}
+		};
+	}   	
+  	var app=angular.module('app',[]);
+  	app.controller('show',function($scope,$http){
+  		$scope.zhuceyo=function(){
+  			if (!$scope.username||!$scope.passworda||!$scope.passwordb) {
+  				return;
+  			}
+  			if ($scope.passworda != $scope.passwordb) {
+  				alert('两次密码输入不一致');
+  				$scope.passworda = '';
+  				$scope.passwordb = '';
+  				return;
+  			}
+  			$http({
+  				url:'/zhuceyo',
+  				method:'GET',
+  				params:{
+  					user:$scope.username,
+  					password:$scope.passworda
+  				}
+  			}).then(function(res){
+  				var json = res.data;
+  				if (!json.error) {
+  					alert(json.msg);
+  				}else{
+  					alert(json.msg);
+  				}
+  			},function(){
+  				alert('网络连接错误');
+  			});
+  		};
+  	});
+	</script>
+</head>
+<body ng-controller="show">
+<div class="register">
+	<p class="touxiang"></p>
+	<ul class="zhucexiang">
+		<li><input type="text" ng-model="username"/><span>请输入用户名/邮箱/电话</span></li>
+		<li><input type="password" ng-model="passworda"/><span>请输入密码</span><input type="button" id="eye"/></li>
+		<li><input type="password" ng-model="passwordb"/><span>请确认密码</span>
+		<input type="button" id="eye"/></li>
+	</ul>
+	
+	<a href="index.html" class="zhucejian" ng-click="zhuceyo()">注册</a>
+</div>
+</body>
+</html>

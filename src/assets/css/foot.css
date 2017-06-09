@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.show {
+  width: 17.7rem;
+  overflow: hidden;
+  background: #0074cb;
+  z-index: 1000; }
+  .show div {
+    width: 1.165rem;
+    height: 0.315rem;
+    color: #fff;
+    font-size: 0.268rem;
+    line-height: 0.315rem;
+    font-family: "微软雅黑体";
+    margin: 0.221rem 0.233rem 0.28rem 1.387rem; }
+  .show ul {
+    width: 1.165rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.256rem; }
+    .show ul li a {
+      display: block;
+      width: 0.245rem;
+      height: 0.245rem; }
+
+.index_bottom {
+  width: 17.7rem;
+  height: 5.826rem;
+  background: #111820;
+  z-index: 1000; }
+  .index_bottom .bottom_left {
+    width: 9.345rem;
+    height: 5.826rem;
+    position: relative; }
+    .index_bottom .bottom_left .list {
+      width: 7.959rem;
+      height: 3.589rem;
+      margin: 0.571rem 0 0 1.398rem; }
+      .index_bottom .bottom_left .list dl {
+        width: 1.993rem;
+        margin-right: 0.99rem;
+        float: left; }
+        .index_bottom .bottom_left .list dl dt {
+          width: 1.993rem;
+          font-size: 0.151rem;
+          color: #fff;
+          margin-bottom: 0.21rem; }
+        .index_bottom .bottom_left .list dl dd a {
+          display: block;
+          width: 1.993rem;
+          text-decoration: none;
+          color: #aaaaaf;
+          margin-top: 0.21rem;
+          font-size: 0.151rem; }
+      .index_bottom .bottom_left .list .last {
+        margin-right: 0; }
+    .index_bottom .bottom_left .conpony {
+      width: 3.146rem;
+      left: 1.398rem;
+      bottom: 0.769rem;
+      color: #666;
+      font-size: 0.14rem;
+      position: absolute; }
+    .index_bottom .bottom_left .bot_title {
+      width: 1.585rem;
+      font-size: 0.163rem;
+      color: #666;
+      position: absolute;
+      bottom: 0.175rem;
+      left: 1.398rem; }
+
+/*# sourceMappingURL=foot.css.map */
